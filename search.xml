@@ -17,6 +17,25 @@
     
     
     <entry>
+      <title>导论甄选</title>
+      <link href="/2023/10/12/%E5%AF%BC%E8%AE%BA%E7%94%84%E9%80%89/"/>
+      <url>/2023/10/12/%E5%AF%BC%E8%AE%BA%E7%94%84%E9%80%89/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="数制概述"><a href="#数制概述" class="headerlink" title="数制概述"></a>数制概述</h1><h2 id="共性"><a href="#共性" class="headerlink" title="共性"></a>共性</h2><p>1  数字 的总个数等于基数（10进制为0<del>9，2进制为0</del>1）</p><p>2  最大的数字比基数小1</p><p>3 每个数字都要乘以基数幂次，幂次由每个数字所在的位置决定。</p><p>例如二进制数(1011)</p><p>可写作1 * 2^3+0 * 2^2+1 * 2^1+1 * 2^0</p><p>N进制基数为N 使用N个数字表示数值 其中最大的数字为N-1 任何一个N进制数的表达都遵循上例的规则</p><p>类似于高中数学中所学习到的科学计数法（bushi）</p><h2 id="运算规则"><a href="#运算规则" class="headerlink" title="运算规则"></a>运算规则</h2><p>逢N-1进1</p><h2 id="除了二进制和十进制以外的数制"><a href="#除了二进制和十进制以外的数制" class="headerlink" title="除了二进制和十进制以外的数制"></a>除了二进制和十进制以外的数制</h2><p>八进制数：基数8 由0~7组成数值的表达</p><p>十六进制：基数16 由0<del>9 A</del>F</p><h1 id="数制转换"><a href="#数制转换" class="headerlink" title="数制转换"></a>数制转换</h1><h2 id="十进制数转换为非十进制"><a href="#十进制数转换为非十进制" class="headerlink" title="十进制数转换为非十进制"></a>十进制数转换为非十进制</h2><h3 id="分为整数和小数进行转换"><a href="#分为整数和小数进行转换" class="headerlink" title="分为整数和小数进行转换"></a>分为整数和小数进行转换</h3><p>十进制整数：除基补余法</p><p>将整数逐次除以需要转换的数制的基数，直到商为0——再将所有的余数自下而上排列</p><p>十进制小数：乘基取整法</p><p>将十进制小数逐次乘以需要转换为的数制的基数直到小数部分的当前值为0——将得到的整数自上而下排列</p><h2 id="非10进制转换为10进制"><a href="#非10进制转换为10进制" class="headerlink" title="非10进制转换为10进制"></a>非10进制转换为10进制</h2><p>位权法：将所有数转换为数*位幂的写法 最后计算得到的结果即为10进制数</p><h3 id="二进制与其他进制的转换"><a href="#二进制与其他进制的转换" class="headerlink" title="二进制与其他进制的转换"></a>二进制与其他进制的转换</h3><h3 id="二进制与八进制之间的转换"><a href="#二进制与八进制之间的转换" class="headerlink" title="二进制与八进制之间的转换"></a>二进制与八进制之间的转换</h3><p>由于3位二进制数恰好是1位八进制数 只要以小数点为界，将整数部分自右向左和小数部分自左向右分别按每3位一组（不足3位用0补齐），然后将各个3位二进制数转换为对应的1位八进制数，即得到转换的结果。</p><p>1011111001010.1011011（二进制）——（010 111 001 010.101 101 100）——【2712.554】（八进制）</p><p>八转二则是逆向的过程道理大致相同 二者相互对应</p><h3 id="二进制与十六进制的转换"><a href="#二进制与十六进制的转换" class="headerlink" title="二进制与十六进制的转换"></a>二进制与十六进制的转换</h3><p>同二进制转八进制 但十六进制为4位数hhh</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 合格性需要 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CPrimer-note</title>
       <link href="/2023/10/10/CPrimer-note/"/>
       <url>/2023/10/10/CPrimer-note/</url>
