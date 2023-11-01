@@ -1,0 +1,684 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Web入门 | Satolu's Blog</title><meta name="author" content="Satolu"><meta name="copyright" content="Satolu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="基本网站编辑使用的工具 计算机。也许这对一些人来说听起来习以为常，但你们中的一些人正在使用手机或图书馆的电脑阅读这篇文章。对于重度的 Web 开发，最好购买一台运行 Windows、macOS 或 Linux 的台式机或笔记本电脑。 文本编辑器，用来写代码。可以是一个文本编辑器（如 Visual Studio Code、Sublime Text、Atom 、GNU Emacs 或者 VIM ），或">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web入门">
+<meta property="og:url" content="http://example.com/2023/09/18/Web/index.html">
+<meta property="og:site_name" content="Satolu&#39;s Blog">
+<meta property="og:description" content="基本网站编辑使用的工具 计算机。也许这对一些人来说听起来习以为常，但你们中的一些人正在使用手机或图书馆的电脑阅读这篇文章。对于重度的 Web 开发，最好购买一台运行 Windows、macOS 或 Linux 的台式机或笔记本电脑。 文本编辑器，用来写代码。可以是一个文本编辑器（如 Visual Studio Code、Sublime Text、Atom 、GNU Emacs 或者 VIM ），或">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/20210227075605_gxspt.gif">
+<meta property="article:published_time" content="2023-09-18T15:09:07.000Z">
+<meta property="article:modified_time" content="2023-11-01T11:49:51.114Z">
+<meta property="article:author" content="Satolu">
+<meta property="article:tag" content="Web">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/20210227075605_gxspt.gif"><link rel="shortcut icon" href="/img/1%E5%8F%91%E7%8E%B0A.png"><link rel="canonical" href="http://example.com/2023/09/18/Web/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":null},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Web入门',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2023-11-01 19:49:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
+
+  if (false) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/20210227075605_gxspt.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="//"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于Satolu</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Satolu's Blog"><span class="site-name">Satolu's Blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="//"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于Satolu</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Web入门</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-18T15:09:07.000Z" title="发表于 2023-09-18 23:09:07">2023-09-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-11-01T11:49:51.114Z" title="更新于 2023-11-01 19:49:51">2023-11-01</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Web入门"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="基本网站编辑"><a href="#基本网站编辑" class="headerlink" title="基本网站编辑"></a>基本网站编辑</h2><h3 id="使用的工具"><a href="#使用的工具" class="headerlink" title="使用的工具"></a>使用的工具</h3><ul>
+<li><strong>计算机</strong>。也许这对一些人来说听起来习以为常，但你们中的一些人正在使用手机或图书馆的电脑阅读这篇文章。对于重度的 Web 开发，最好购买一台运行 <strong>Windows、macOS 或 Linux</strong> 的台式机或笔记本电脑。</li>
+<li><strong>文本编辑器</strong>，用来写代码。<strong>可以是一个文本编辑器</strong>（如 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">Visual Studio Code</a>、<a target="_blank" rel="noopener" href="https://www.sublimetext.com/">Sublime Text</a>、<a target="_blank" rel="noopener" href="https://atom.io/">Atom</a> 、<a target="_blank" rel="noopener" href="https://www.gnu.org/software/emacs/">GNU Emacs</a> 或者 <a target="_blank" rel="noopener" href="https://www.vim.org/">VIM</a> ），或一个混合编辑器（ <a target="_blank" rel="noopener" href="https://www.adobe.com/products/dreamweaver.html">Dreamweaver</a> 或 <a target="_blank" rel="noopener" href="https://www.jetbrains.com/webstorm/">WebStorm</a>）。Office 文档不适合这种用途，因为它们依赖隐藏的元素，会干扰网络浏览器使用的渲染引擎。</li>
+<li><strong>网络浏览器</strong>，<strong>用以测试代码</strong>。目前，最常用的浏览器是 <a target="_blank" rel="noopener" href="https://www.mozilla.org/zh-CN/firefox/">Firefox</a> 、<a target="_blank" rel="noopener" href="https://www.google.cn/intl/zh-CN/chrome/">Chrome</a>、<a target="_blank" rel="noopener" href="https://www.opera.com/zh-cn">Opera</a>、<a target="_blank" rel="noopener" href="https://www.apple.com.cn/safari/">Safari</a>、<a target="_blank" rel="noopener" href="https://windows.microsoft.com/en-us/internet-explorer/download-ie">Internet Explorer</a> 和 <a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。你还应该测试你的网站在移动设备和你的目标受众可能仍在使用的任何旧浏览器（如 IE 8-10）上的表现<strong>。<a target="_blank" rel="noopener" href="https://lynx.browser.org/">Lynx</a>，一个基于文本的终端网络浏览器，对于查看视力障碍用户对你的网站的体验是非常好的。</strong></li>
+<li><strong>图形编辑器</strong>，如 <a target="_blank" rel="noopener" href="https://www.gimp.org/">GIMP</a> 、<a target="_blank" rel="noopener" href="https://www.figma.com/">Figma</a> 、<a target="_blank" rel="noopener" href="https://www.getpaint.net/">Paint.NET</a> 、<a target="_blank" rel="noopener" href="https://www.adobe.com/products/photoshop.html">Photoshop</a> 、<a target="_blank" rel="noopener" href="https://www.sketch.com/">Sketch</a> 或 <a target="_blank" rel="noopener" href="https://www.adobe.com/products/xd.html">XD</a> ，为你的网页制作图像或图形。</li>
+<li><strong>版本控制系统</strong>，<strong>用来管理服务器上的文件，与团队合作开展项目，共享代码和资产，避免编辑冲突。现在，<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a> 是最流行的版本控制系统，还有 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 或 <a target="_blank" rel="noopener" href="https://gitlab.com/">GitLab</a> 托管服务。</strong></li>
+<li><strong>FTP 工具</strong>，老式 <strong>Web 托管账户</strong>，以管理服务器上的文件（<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a> 正越来越多地取代 FTP 用于此目的）。有大量的 (S)FTP 程序可用，包括 <a target="_blank" rel="noopener" href="https://cyberduck.io/">Cyberduck</a>、<a target="_blank" rel="noopener" href="https://fetchsoftworks.com/">Fetch</a> 和 <a target="_blank" rel="noopener" href="https://filezilla-project.org/">FileZilla</a>。</li>
+<li><strong>自动化构建工具</strong>，如 <a target="_blank" rel="noopener" href="https://webpack.js.org/">Webpack</a> 、<a target="_blank" rel="noopener" href="https://gruntjs.com/">Grunt</a> 或 <a target="_blank" rel="noopener" href="https://gulpjs.com/">Gulp</a> ，以自动执行重复性任务，如简化代码和运行测试。</li>
+<li><strong>库、框架等，</strong>以加快编写常用功能。一个库往往是一个现有的 JavaScript 或 CSS 文件，它提供了现成的功能，供你在代码中使用。框架则更进一步，为你提供一个完整的系统和一些自定义的语法，让你在上面写一个 Web 应用。</li>
+<li>此外还有更多的工具！</li>
+</ul>
+<h3 id="设计外观"><a href="#设计外观" class="headerlink" title="设计外观"></a>设计外观</h3><p>略（这是作为开发者的基本素养）</p>
+<h3 id="处理文件"><a href="#处理文件" class="headerlink" title="处理文件"></a>处理文件</h3><p>一个网站包含许多文件：<strong>文本内容、代码、样式表、媒体内容</strong>，等等。当你建立一个网站时，你需要在计算机上将这些文件以合理的结构组织起来，确保文件之间交互畅通，并在你最终<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/Publishing_your_website">将它们上传到服务器</a>之前使你的所有内容看起来正确。<em>处理文件</em>讨论了一些你应该注意的问题，以便你能为你的网站建立一个合理的文件结构。</p>
+<h4 id="网站保存"><a href="#网站保存" class="headerlink" title="网站保存"></a>网站保存</h4><p>对于本地网站，应将所<strong>有相关文件放在一个单独文件夹中</strong>，可以映射出服务器端站点文件结构。这个文件夹可以放在任何你喜欢的地方，但你应该把它放在你能轻易找到的地方，也许是在你的桌面上，在你的主页文件夹里，或者在你的硬盘根目录下。</p>
+<p>步骤如下</p>
+<ol>
+<li>选择一个地方来存储你的网站项目。在你选择的地方，创建一个名为 <code>web-projects</code>（或类似）的新文件夹。这是你所有的网站项目的存放地。</li>
+<li>在这个文件夹中，创建另一个文件夹来存放你的第一个网站。称之为 <code>test-site</code>（或更有想象力的东西）</li>
+</ol>
+<p>PS:yin_yang:一些注意事项：</p>
+<ol>
+<li>许多计算机，特别是网络服务器，<strong>是区分大小写的</strong>。因此，假如你把一张图片放在你的网站上 <code>test-site/MyImage.jpg</code>，然后在一个不同的文件中，你试图以 <code>test-site/myimage.jpg</code> 来调用该图片，它可能无法工作。</li>
+<li><strong>浏览器、网络服务器和编程语言对空格的处理并不一致。例如，如果你在文件名中使用空格，</strong>一些系统可能将其<strong>视为两个文件名</strong>。一些服务器会用“%20”（URL 中空格的字符代码）替换文件名中的区域，导致所有链接被破坏。最好用连字符而不是下划线来分隔单词。对比 <code>my-file.html</code> 与 <code>my_file.html</code>。</li>
+</ol>
+<h3 id="测试网站应该是什么结构"><a href="#测试网站应该是什么结构" class="headerlink" title="测试网站应该是什么结构"></a>测试网站应该是什么结构</h3><p><img src="/2023/09/18/Web/screenshot20231031.png" alt="screenshot20231031"></p>
+<h3 id="文件路径"><a href="#文件路径" class="headerlink" title="文件路径"></a>文件路径</h3><p>为<strong>使文件间正常交互</strong>，<strong>应为每个文件提供访问路径</strong>，所以一个文件知道另一个文件的位置。为作为演示，<strong>我们将在 <code>index.html</code> 中插入一小段 HTML，</strong>并使其显示你在<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">“你的网站会是什么样？“</a>一文中选择的图片。或者，你可以在你的电脑上或从网上选择一个现有的图片，并在下面的步骤中使用它：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>My test page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;My test image&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>该行代码 <code>**&lt;img src=&quot;&quot; alt=&quot;My test image&quot;&gt;**</code> 用于向页面中插入图片。我们<strong>需要告知 HTML 图片的位置。</strong>这张图片位于 <em>images</em> 目录下，与 <code>index.html</code> 处于同一目录。为了从 <code>index.html</code> 访问到我们的图像，我们需要的文件路径是 <code>images/your-image-filename</code>。例如，这里的图像叫做 <code>firefox-icon.png</code>，那么文件路径就是 <code>images/firefox-icon.png</code>。</li>
+<li>在 HTML 代码 <code>src=&quot;&quot;</code> 的双引号之间插入文件路径。</li>
+<li>保存 HTML 文件，然后使用浏览器打开（双击该文件）。<strong>你应该看到新网页显示了新的图像！</strong></li>
+</ol>
+<p>![screenshot20231031 (1)](screenshot20231031 (1).png)</p>
+<h4 id="文件路径的一些通用规则："><a href="#文件路径的一些通用规则：" class="headerlink" title="文件路径的一些通用规则："></a>文件路径的一些通用规则：</h4><ul>
+<li>若<strong>引用的目标文件与 HTML 文件同级，只需直接使用文件名</strong>，例如：<code>my-image.jpg</code>。</li>
+<li>要引用<strong>子目录中的文件，请在路径前面写上目录名</strong>，再加上一个正斜杠。例如：<code>subdirectory/my-image.jpg</code>。</li>
+<li>若引用的目标文件位于 <strong>HTML 文件的上级，需要加上两个点。</strong>举个例子，如果 <strong><code>index.html</code> 在 <code>test-site</code> 的一个子文件夹内</strong>，而 <code>my-image.jpg</code> 在 <code>test-site</code> 内，你可以使用**<code>../my-image.jpg</code> 从 <code>index.html</code> 引用 <code>my-image.jpg</code>**。</li>
+<li>以上方法可以随意组合，比如：<code>../subdirectory/another-subdirectory/my-image.jpg</code>。</li>
+</ul>
+<h3 id="预期效果"><a href="#预期效果" class="headerlink" title="预期效果"></a>预期效果</h3><p>![screenshot20231031 (2)](screenshot20231031 (2).png)</p>
+<h2 id="前端三件套"><a href="#前端三件套" class="headerlink" title="前端三件套"></a>前端三件套</h2><h3 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h3><p><strong>超文本标记语言</strong>（英语：<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage，简称：HTML）是一种用来<strong>结构化 Web 网页及其内容的标记语言</strong>。网页内容可以是：一组段落、一个重点信息列表、也可以含有图片和数据表。正如标题所示，本文将对 HTML 及其功能做一个基本介绍。</p>
+<h4 id="WHAT-is-HTML"><a href="#WHAT-is-HTML" class="headerlink" title="WHAT is HTML"></a>WHAT is HTML</h4><p>HTML <strong>不是一门编程语言，而是一种用于定义内容结构的<em>标记语言</em>。</strong>HTML <strong>由一系列的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Element">元素</a>组成</strong>，这些元素可以用来包围不同部分的内容，使其以某种方式呈现或者工作<strong>。一对<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Tag">标签</a>可以为一段文字或者一张图片添加超链接，将文字设置为斜体，改变字号，等等。例如，键入下面一行内容：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">My cat is very grumpy</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My cat is very grumpy<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="/2023/09/18/Web/---.png" alt="---"></p>
+<p><strong>这个元素的主要部分有：</strong></p>
+<ol>
+<li><strong>开始标签</strong>（Opening tag）：包含元素的名称（<strong>本例为 p</strong>），被<strong>大于号、小于号</strong>所包围。表示<strong>元素从这里开始或者开始起作用 —— 在本例中即段落由此开始。</strong></li>
+<li><strong>结束标签</strong>（Closing tag）：与开始标签相似，<strong>只是其在元素名之前包含了一个斜杠。这表示着元素的结尾</strong> —— 在本例中即<strong>段落在此结束。</strong>初学者常常会犯忘记包含结束标签的错误，这可能会产生一些奇怪的结果。</li>
+<li><strong>内容</strong>（Content）：<strong>元素的内容，本例中就是所输入的文本本身</strong>。</li>
+<li><strong>元素</strong>（Element）：开始标签、结束标签与内容相结合，便是一个完整的元素。</li>
+</ol>
+<p><strong>元素也可以有属性（Attribute）：</strong></p>
+<p><strong>![screenshot20231031 (3)](screenshot20231031 (3).png)</strong></p>
+<p><strong>属性包含了关于元素的一些额外信息</strong>,<strong>这些信息本身不应显现在内容中</strong></p>
+<p>本例中:</p>
+<p><strong><code>class</code> 是属性名称</strong>，<code>editor-note</code> <strong>是属性的值</strong>。**<code>class</code> 属性可为元素提供一个标识名称，以便进一步为元素指定样式或进行其他操作时使用。**</p>
+<h5 id="属性应该包含："><a href="#属性应该包含：" class="headerlink" title="属性应该包含："></a>属性应该包含：</h5><ol>
+<li>在<strong>属性与元素名称</strong>（或上一个属性，如果有超过一个属性的话）之间的空格符。</li>
+<li><strong>属性的名称，并接上一个等号</strong>。</li>
+<li><strong>由引号所包围的属性值</strong>。</li>
+</ol>
+<p><strong>备注：</strong> <strong>不包含 ASCII 空格（以及 <code>&quot;</code> <code>&#39;</code> &#96;&#96;&#96; <code>=</code> <code>&lt;</code> <code>&gt;</code>）的简单属性值可以不使用引号封装，但是建议将所有属性值用引号括起来，这样的代码一致性更佳，更易于阅读。</strong></p>
+<h4 id="嵌套元素"><a href="#嵌套元素" class="headerlink" title="嵌套元素"></a>嵌套元素</h4><p>也可以<strong>将一个元素置于其他元素之中</strong> —— 称作<strong>嵌套</strong>。要表明猫咪非常暴躁，可以将“very”用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/strong"><code>&lt;strong&gt;</code></a> 元素包围，爆字将突出显示：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>My cat is <span class="tag">&lt;<span class="name">strong</span>&gt;</span>very<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> grumpy.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>必须保证元素嵌套次序正确：本例首先使用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> 标签，然后是 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/strong"><code>&lt;strong&gt;</code></a> 标签，因此要先结束 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/strong"><code>&lt;strong&gt;</code></a> 标签，最后再结束 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p"><code>&lt;/p&gt;</code></a> 标签。这样是不对的：</p>
+<h4 id="空元素"><a href="#空元素" class="headerlink" title="空元素"></a>空元素</h4><p><strong>不包含任何内容的元素</strong>称为空元素 such as：</p>
+<p><img>元素</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/firefox-icon.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;My test image&quot;</span> /&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>本元素包含<strong>两个属性</strong>，但是<strong>并没有 <code>&lt;/img&gt;</code> 结束标签，元素里也没有内容。</strong>这是因为图像元素不需要通过内容来产生效果，它的作用是向其所在的位置嵌入一个图像。</p>
+<h3 id="HTML文档详解"><a href="#HTML文档详解" class="headerlink" title="HTML文档详解"></a>HTML文档详解</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en-US&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>My test page<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;images/firefox-icon.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;My test image&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Doctype">文档类型</a>。这是必不可少的开头。混沌初分，HTML 尚在襁褓（大约是 1991&#x2F;92 年）之时，这个元素用来关联 HTML 编写规范，以供自动查错等功能所用。而在当今，它作用有限，<strong>可以说仅用于保证文档正常读取。现在知道这些就足够了</strong>。</li>
+<li><code>&lt;html&gt;&lt;/html&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html"><html></a> 元素。该元素包含整个页面的所有内容，有时候也称作<strong>根元素</strong>。<strong>里面也包含了 <code>lang</code> 属性，写明了页面的主要语种。</strong></li>
+<li><code>&lt;head&gt;&lt;/head&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head">&#96;&#96;</a> 元素。<strong>所有那些你加到页面中，且<em>不</em>向看客展示的页面成员，都以这个元素为容器</strong>。其中包含诸如提供给搜索引擎<strong>的<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Keyword">关键字</a>和页面描述</strong>、用作<strong>风格化页面的 CSS、字符集声明等等。</strong></li>
+<li><code>&lt;meta charset=&quot;utf-8&quot;&gt;</code>——该元素<strong>指明你的文档使用 UTF-8 字符编码</strong>，UTF-8 包括世界绝大多数书写语言的字符。它基本上可以处理任何文本内容。以它为编码还可以避免以后出现某些问题，没有理由再选用其他编码。</li>
+<li><code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Viewport_concepts#%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E7%9A%84%E8%A7%86%E5%8F%A3">视口元素</a>可以确保页面以<strong>视口宽度进行渲染</strong>，避免移动端浏览器上因页面过宽导致缩放。</li>
+<li><code>&lt;title&gt;&lt;/title&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title">&#96;&#96;</a> 元素。该<strong>元素设置页面的标题</strong>，显示在浏览器标签页上，也作为收藏网页的描述文字。****</li>
+<li><code>&lt;body&gt;&lt;/body&gt;</code>——<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body">&#96;&#96;</a> 元素。该元素<strong>包含期望让用户在访问页面时看到的<em>全部</em>内容，包括文本、图像、视频、游戏、可播放的音轨或其他内容。</strong></li>
+</ul>
+<h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;img src=&quot;images/firefox-icon.png&quot; alt=&quot;My test image&quot; /&gt;</span><br></pre></td></tr></table></figure>
+
+<p>像之前所讲，该元素通过包含图像文件路径的**地址属性 <code>src</code>**，可在所在位置嵌入图像。</p>
+<p>该元素还包括一个**替换文字属性 <code>alt</code>**，是图像的描述内容，用于当图像不能被用户看见时显示，不可见的原因可能是：</p>
+<ol>
+<li>用户有<strong>视觉障碍。</strong>视障用户可以使用屏幕阅读器来朗读 <code>alt</code> 属性的内容。</li>
+<li><strong>有些错误使图像无法显示</strong>。可以<strong>试着故意将 <code>src</code> 属性里的路径改错。保存并刷新页面就可以在图像位置看到：</strong></li>
+<li><strong><code>alt</code> 属性的关键字即“描述文本”。</strong><code>alt</code> 文本应向用户完整地传递图像要表达的意思。</li>
+</ol>
+<h3 id="标记文本"><a href="#标记文本" class="headerlink" title="标记文本"></a>标记文本</h3><h4 id="标题（Heading）"><a href="#标题（Heading）" class="headerlink" title="标题（Heading）"></a>标题（Heading）</h4><p>标题元素可用于指定内容的标题和子标题。就像一本书的书名、每章的大标题、小标题，等。HTML 文档也是一样。HTML 包括六个级别的标题， <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&#96;&#96; (en-US)</a>–<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements">&#96;&#96; (en-US)</a> ，一般最多用到 3-4 级标题。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>主标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>顶层标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>子标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>次子标题<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><p>如上文所讲，<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p">&#96;&#96;</a> 元素是用来指定段落的。通常用于指定常规的文本内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;p&gt;这是一个段落&lt;/p&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>Web 上的许多内容都是列表，HTML 有一些特别的列表元素。标记列表通常包括至少两个元素。最常用的列表类型为：</p>
+<ol>
+<li><strong>无序列表</strong>（Unordered List）中项目的顺序并不重要，就像购物列表。用一个 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul"><code>&lt;u1&gt;</code></a> 元素包围。</li>
+<li><strong>有序列表</strong>（Ordered List）中项目的顺序很重要，就像烹调指南。用一个 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol"><code>&lt;u2&gt;</code></a> 元素包围。</li>
+</ol>
+<p>列表的每个项目用一个列表项目（List Item）元素 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a> 包围。</p>
+<p>Such as: <strong>将一个段落更改为列表</strong></p>
+<p>![screenshot20231031 (4)](screenshot20231031 (4).png)</p>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>链接非常重要 — 它们赋予 Web 网络属性。要植入一个链接，我们需要使用一个简单的元素 — <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a> — a 是 “anchor” （锚）的缩写。要将一些文本添加到链接中，只需<strong>如下几步</strong></p>
+<p>![screenshot20231031 (5)](screenshot20231031 (5).png)</p>
+<p>如果<strong>网址开始部分省略了 <code>https://</code> 或者 <code>http://</code>，可能会得到错误的结果。</strong>在完成一个链接后，可以试着点击它来确保指向正确。</p>
+<p><strong>备注：</strong> <code>href</code> 这个名字可能开始看起来有点令人费解，代表<strong>超文本引用</strong>（ <strong>h</strong>ypertext <strong>ref</strong>erence）</p>
+<h3 id="CSS基础"><a href="#CSS基础" class="headerlink" title="CSS基础"></a>CSS基础</h3><p>CSS（Cascading Style Sheets，层叠样式表）是为 web 内容添加样式的代码。本节将介绍 CSS 的基础知识，并解答像这样的问题：怎样将文本设置为红色？怎样将内容显示在屏幕的特定位置？怎样用背景图片或颜色来装饰网页？</p>
+<h4 id="WHAT-is-CSS"><a href="#WHAT-is-CSS" class="headerlink" title="WHAT  is CSS"></a>WHAT  is CSS</h4><p>和 HTML 类似，CSS 也<strong>不是真正的编程语言</strong>，甚至不是标记语言。<strong>CSS 是一门样式表语言</strong>，这也就是说人们可以用它来选择性地为 HTML 元素添加样式。举例来说，以下 CSS 代码选择了所有的段落文字，并将它们设置为红色。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>在文本编辑器中，将上述的三行 CSS 代码粘贴到一个新的文件中，将文件命名为 <code>style.css</code> 并保存到 <code>styles</code> 文件夹下。</strong></p>
+<p><strong>–引入：</strong></p>
+<p>为了使代码发挥作用，<strong>我们仍然需要将上述 CSS 样式应用到你的 HTML 文档中。</strong>否则，这些样式不会改变 HTML 的外观。（如果你没有完成前几节的实践，请复习<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/Dealing_with_files">处理文件</a>和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/HTML_basics">HTML 基础</a>。）</p>
+<p>过程如下</p>
+<p>打开 <code>index.html</code> 文件，然后将下面一行粘贴到文档头部（也就是 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/head"><head></a> 和 <code>&lt;/head&gt;</code> 标签之间）。</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;link href=&quot;styles/style<span class="selector-class">.css</span>&quot; rel=&quot;stylesheet&quot; /&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>保存 <code>index.html</code> 并用浏览器将其打开。应该看到以下页面：</li>
+</ol>
+<p>![screenshot20231031 (6)](screenshot20231031 (6).png)</p>
+<h4 id="CSS工作原理"><a href="#CSS工作原理" class="headerlink" title="CSS工作原理"></a>CSS工作原理</h4><p>![screenshot20231031 (7)](screenshot20231031 (7).png)</p>
+<p>整个结构称为<strong>规则集</strong>（<em>规则集</em>通常简称<em>规则</em>），注意各个部分的名称：</p>
+<h5 id="选择器（Selector）"><a href="#选择器（Selector）" class="headerlink" title="选择器（Selector）"></a>选择器（Selector）</h5><p>HTML 元素的名称位于规则集开始。它<strong>选择了一个或多个需要添加样式的元素</strong>（在这个例子中就是 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> 元素）。<strong>要给不同元素添加样式，只需要更改选择器。</strong></p>
+<h5 id="声明（Declaration）"><a href="#声明（Declaration）" class="headerlink" title="声明（Declaration）"></a>声明（Declaration）</h5><p>一个单独的规则，如 <code>color: red;</code> 用来指定添加样式元素的<strong>属性</strong>。</p>
+<h5 id="属性（Properties）"><a href="#属性（Properties）" class="headerlink" title="属性（Properties）"></a>属性（Properties）</h5><p>改变 <strong>HTML 元素样式的途径</strong>（本例中 <code>color</code> 就是 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a> 元素的属性）。CSS 中，由<strong>编写人员决定修改哪个属性以改变规则。</strong></p>
+<h5 id="属性的值（Property-value）"><a href="#属性的值（Property-value）" class="headerlink" title="属性的值（Property value）"></a>属性的值（Property value）</h5><p>在属性的右边，冒号后面即<strong>属性的值</strong>，它从<strong>指定属性的众多外观中选择一个值（我们除了 <code>red</code> 之外还有很多属性值可以用于 <code>color</code> ）。</strong></p>
+<p>![screenshot20231031 (8)](screenshot20231031 (8).png)</p>
+<table>
+<thead>
+<tr>
+<th align="left">选择器名称</th>
+<th align="left">选择的内容</th>
+<th align="center">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">元素选择器（也称作标签或类型选择器）</td>
+<td align="left">所有指定类型的 HTML 元素</td>
+<td align="center"><code>p</code> 选择 <code>&lt;p&gt;</code></td>
+</tr>
+<tr>
+<td align="left">ID 选择器</td>
+<td align="left">具有特定 ID 的元素。单一 HTML 页面中，每个 ID 只对应一个元素，一个元素只对应一个 ID</td>
+<td align="center"><code>#my-id</code> 选择 <code>&lt;p id=&quot;my-id&quot;&gt;</code> 或 <code>&lt;a id=&quot;my-id&quot;&gt;</code></td>
+</tr>
+<tr>
+<td align="left">类选择器</td>
+<td align="left">具有特定类的元素。单一页面中，一个类可以有多个实例</td>
+<td align="center"><code>.my-class</code> 选择 <code>&lt;p class=&quot;my-class&quot;&gt;</code> 和 <code>&lt;a class=&quot;my-class&quot;&gt;</code></td>
+</tr>
+<tr>
+<td align="left">属性选择器</td>
+<td align="left">拥有特定属性的元素</td>
+<td align="center"><code>img[src]</code> 选择 <code>&lt;img src=&quot;myimage.png&quot;&gt;</code> 但不是 <code>&lt;img&gt;</code></td>
+</tr>
+<tr>
+<td align="left">伪类选择器</td>
+<td align="left">特定状态下的特定元素（比如鼠标指针悬停于链接之上）</td>
+<td align="center"><code>a:hover</code> 选择仅在鼠标指针悬停在链接上时的 <code>&lt;a&gt;</code> 元素</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h5 id="字体和文本"><a href="#字体和文本" class="headerlink" title="字体和文本"></a>字体和文本</h5><ol>
+<li><p>第一步，找到之前在 [你的网站会是什么样子？](<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like">设计网站外观 - 学习 Web 开发 | MDN (mozilla.org)</a>)中保存的Google Font 输出的地址。并以<code>&lt;link&gt;</code>元素的形式添加进index.html文档头部（<code>&lt;head&gt;</code>和</head>之间的任意位置）。代码如下</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span></span></span><br><span class="line"><span class="tag">  <span class="attr">href</span>=<span class="string">&quot;https://fonts.googleapis.com/css?family=Open+Sans&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这段代码将你的页面链接到一个样式表，该样式表将 Open Sans 字体家族与你的网页一起加载。</p>
+</li>
+<li><p>接下来，删<strong>除 <code>style.css</code> 文件中已有的规则。</strong>虽然测试是成功的，但是<strong>红字看起来并不太舒服</strong>。</p>
+</li>
+<li><p>添加以下几行（如下图所示），用你在[你的网站会是什么样子](<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/What_will_your_website_look_like#%E5%AD%97%E4%BD%93">设计网站外观 - 学习 Web 开发 | MDN (mozilla.org)</a>)？</p>
+<p>中选择的font-family替换font-family。font-family属性指的是你想用于文本的字体。这个规则为<strong>整个页面定义了一个全局的基本字体和字体大小。</strong>由于<html>&#96;是整个页面的<strong>父元素</strong>，它里面的所有元素都继承相同的font-family和font-family</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">10px</span>; <span class="comment">/* px 表示“像素（pixel）”: 基础字号为 10 像素 */</span></span><br><span class="line">  <span class="attribute">font-family</span>: <span class="string">&quot;Open Sans&quot;</span>, sans-serif; <span class="comment">/* 这应该是你从 Google Fonts 得到的其余输出。 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>备注：</strong> CSS 文档中所有位于 <code>/*</code> 和 <code>*/</code> 之间的内容都是 <strong>CSS 注释</strong>。浏览器在渲染代码时会忽略注释。CSS 注释是一种让你写下关于你的代码或逻辑的有用注解的方式。</p>
+</li>
+<li><p>接下来为 <strong>HTML 主体内的元素（h1、<li>和<p>）设置字体大小。我们也将标题居中显示。</strong>最后，<strong>扩充下方的第二个规则集，为正文设置行高和字间距，从而提高页面的可读性。</strong></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">60px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span>,</span><br><span class="line"><span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">2</span>;</span><br><span class="line">  <span class="attribute">letter-spacing</span>: <span class="number">1px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>可以随时调整这些 <code>px</code> 值来获得满意的结果，以下是大体效果：</p>
+<h4 id="CSS-一切皆盒子"><a href="#CSS-一切皆盒子" class="headerlink" title="CSS:一切皆盒子"></a>CSS:一切皆盒子</h4><p>编写 CSS 时你会发现，你的工作好像是围绕着一个一个盒子展开的——设置尺寸、颜色、位置，等等。页面里大部分 HTML 元素都可以被看作若干层叠的盒子。</p>
+<ul>
+<li><code>padding</code>（内边距）：是指<strong>内容周围的空间。在下面的例子中，它是段落文本周围的空间。</strong></li>
+<li><code>border</code>（边框）：是紧接着<strong>内边距</strong>的线。</li>
+<li><code>margin</code>（外边距）：是围绕元素<strong>边界外侧</strong>的空间。</li>
+</ul>
+<p>![screenshot20231031 (9)](screenshot20231031 (9).png)</p>
+<p>这里还使用了：</p>
+<ul>
+<li><code>width</code>：元素的宽度</li>
+<li><code>background-color</code>：元素内容和内边距底下的颜色</li>
+<li><code>color</code>：元素内容（通常是文本）的颜色</li>
+<li><code>text-shadow</code>：为元素内的文本设置阴影</li>
+<li><code>display</code>：设置元素的显示模式（继续阅读文章以了解更多细节）</li>
+</ul>
+<h5 id="更改页面颜色"><a href="#更改页面颜色" class="headerlink" title="更改页面颜色"></a>更改页面颜色</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#00539f</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="文档体样式"><a href="#文档体样式" class="headerlink" title="文档体样式"></a>文档体样式</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">600px</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  <span class="attribute">background-color</span>: <span class="number">#ff9500</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">20px</span> <span class="number">20px</span> <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">5px</span> solid black;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这里有对于 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a> 元素的几条声明，我们来逐条查看：</p>
+<ul>
+<li><code>width: 600px;</code> <strong>强制页面永远保持 600 像素宽。</strong></li>
+<li><code>margin: 0 auto;</code> 当你在 <code>margin</code> 或 <code>padding</code> 这样的属性上设置两个值时，第一个值影响元素的<em>上下</em>方向（在这个例子中设置为 <code>0</code>）；第二个值影响<em>左右</em>方向。(这里，<code>auto</code> 是一个特殊的值，它将可用的水平空间平均分配给左和右）。如 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/margin#%E8%AF%AD%E6%B3%95">Margin 语法</a>中所记载的那样，你也可以使用一个、两个、三个或四个值。</li>
+<li><code>background-color: #FF9500;</code> 如前文所述，指定元素的背景颜色。我们给 body 用了一种略微偏红的橘色以与深蓝色的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html">&#96;&#96;</a> 元素形成反差，你也可以尝试其他颜色。</li>
+<li><code>padding: 0 20px 20px 20px;</code> 我们给内边距设置了四个值来让内容四周产生一点空间。这一次我们不设置上方的内边距，设置右边，下方，左边的内边距为 20 像素。值以上、右、下、左的顺序排列。与 <code>margin</code> 一样，你也可以像 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/padding#%E8%AF%AD%E6%B3%95">Padding 语法</a>中所记载的那样，使用一个、两个、三个或四个值。</li>
+<li><code>border: 5px solid black;</code> 这是为<strong>边框的宽度、样式和颜色设置的值</strong>。在本例中，它是一个在主体的所有侧面的 5 像素宽的纯黑色边框。</li>
+</ul>
+<h5 id="定位页面主标题以及添加样式"><a href="#定位页面主标题以及添加样式" class="headerlink" title="定位页面主标题以及添加样式"></a>定位页面主标题以及添加样式</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">h1</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">20px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#00539f</span>;</span><br><span class="line">  <span class="attribute">text-shadow</span>: <span class="number">3px</span> <span class="number">3px</span> <span class="number">1px</span> black;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>你可能已经注意到，<strong>在正文的顶部有一个难看的间隙。这是因为浏览器对 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/Heading_Elements">h1</a> 元素（以及其他元素）应用了默认样式</strong>。这可能看起来是个坏主意，但其目的是为没有样式的页面提供基本的可读性。为了消除这种间隙，我们用设置 <code>margin: 0;</code> 来覆盖浏览器的默认样式。</p>
+<p>接下来，我们将标题的顶部和底部内边距设置为 20 像素。</p>
+<p>之后，我们将标题文本设置为与 HTML 背景颜色相同的颜色。</p>
+<p>最后，<code>text-shadow</code> 对元素的文本内容施加阴影。它的四个值是：</p>
+<ul>
+<li>第一个像素值设置阴影与文本的<strong>水平偏移量</strong>：它横移的距离。</li>
+<li>第二个像素值设置阴影与文本的<strong>垂直偏移量</strong>：它向下移动的距离。</li>
+<li>第三个像素值设置阴影的<strong>模糊半径</strong>。一个更大的值会产生一个更模糊的阴影。</li>
+<li>第四个值设置阴影的基色。</li>
+</ul>
+<p>试着用不同的值进行试验，看看它是如何改变外观的。</p>
+<h5 id="图像居中"><a href="#图像居中" class="headerlink" title="图像居中"></a>图像居中</h5><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>： block；</span><br><span class="line">	<span class="attribute">margin</span>： <span class="number">0</span> auto；</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+
+<p>最后，我们把图像居中来使页面更美观。可以复用 body 的 <code>margin: 0 auto</code>，但有一些差异，需要额外的设置来使 CSS 发挥作用。</p>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body"><body></a> 元素是<strong>块级</strong>元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值。而图片是<strong>行级</strong>元素，不具备块级元素的一些功能。所以为了使图像有外边距，我们必须使用 <code>display: block</code> 给予其块级行为。</p>
+<p>![screenshot20231031 (10)](screenshot20231031 (10).png)</p>
+<h4 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h4><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/JavaScript">JavaScript</a>（缩写：JS）是一门完备的动态编程语言。当应用于 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/HTML">HTML</a> 文档时，可为网站提供动态交互特性。由布兰登·艾克（Brendan Eich，Mozilla 项目、Mozilla 基金会和 Mozilla 公司的联合创始人）发明。</p>
+<p>应用场合极其广泛，简单到幻灯片、照片库、浮动布局和响应按钮点击，复杂到游戏、2D&#x2F;3D 动画、大型数据库驱动程序等等。</p>
+<h5 id="WHAT-IS-JavaScript"><a href="#WHAT-IS-JavaScript" class="headerlink" title="WHAT IS JavaScript"></a>WHAT IS JavaScript</h5><p>其中包括：</p>
+<ul>
+<li>浏览器应用程序接口（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/API">API</a>）—— 浏<strong>览器内置的 API 提供了丰富的功能，比如：动态创建 HTML 和设置 CSS 样式、从用户的摄像头采集处理视频流、生成 3D 图像与音频样本等等。</strong></li>
+<li>第三方 API —— 让开发者可以在<strong>自己的站点中整合其他内容提供者（Twitter、Facebook 等）提供的功能。</strong></li>
+<li>第三方框架和库 —— <strong>用来快速构建网站和应用。</strong></li>
+</ul>
+<h5 id="“Hello-World-”示例"><a href="#“Hello-World-”示例" class="headerlink" title="“Hello World!”示例"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web/JavaScript_basics#%E2%80%9Chello_world!%E2%80%9D%E7%A4%BA%E4%BE%8B">“Hello World!”示例</a></h5><p>JavaScript 是最振奋人心的 Web 技术之一，而且在娴熟驾驭之后，你的网站在功能和创新力上将达到一个新的维度。</p>
+<p>然而，<strong>JavaScript 比 HTML 和 CSS 学习起来更加复杂一点</strong>，所以必须一步一个脚印地学习。首先，来看看如何在页面中添加一些基本的 JavaScript 脚本来建造一个“Hello world!”示例</p>
+<p>1.首先，打开你的测试站点，<strong>创建一个名为 <code>scripts</code> 的文件夹。然后在其中创建一个名为 main.js 的文件</strong></p>
+<p>2.下一步，在 <code>index.html</code> 文件</body> 标签前的新行添加以下代码。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;scripts/main.js&quot;</span> <span class="attr">defer</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>3.与 CSS 的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a> 元素类似，它将 JavaScript 引入页面以作用于 HTML（以及 CSS 等页面上所有内容）：</p>
+<p>4.现在将以下代码添加到 <code>main.js</code> 文件中：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myHeading = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;h1&quot;</span>);</span><br><span class="line">myHeading.<span class="property">textContent</span> = <span class="string">&quot;Hello world!&quot;</span>;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>最后，保存 HTML 和 JavaScript 文件，用浏览器打开 <code>index.html</code>。可以看到如下内容：</p>
+<p>![screenshot20231031 (11)](screenshot20231031 (11).png)</p>
+<p><strong>详解</strong></p>
+<p>JavaScript 把页面的标题改成了“Hello world!” 。首先用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector"><code>querySelector()</code></a> 函数获取标题的引用，并把它储存在 <code>myHeading</code> 变量中。这与 <strong>CSS 选择器的用法非常相像：</strong>若要对某个元素进行操作，首先得选择它。</p>
+<p>之后，把 <strong><code>myHeading</code> 变量的属性</strong> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Node/textContent"><code>textContent</code></a> （标题内容）<strong>修改</strong>为“Hello world!” 。</p>
+<h4 id="Javascript快速入门"><a href="#Javascript快速入门" class="headerlink" title="Javascript快速入门"></a>Javascript快速入门</h4><p>我们来学习一些 JavaScript 的核心特性，从而更好地理解它的运行机制。学习这些知识很有意义，因为这些原理普遍适用于所有编程语言，掌握好它们，可以做到融会贯通。</p>
+<h5 id="变量（Variable）"><a href="#变量（Variable）" class="headerlink" title="变量（Variable）"></a>变量（Variable）</h5><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Variable">变量</a> 是存储值的容器。要声明一个变量，**先输入关键字 <code>let</code> 或 <code>var</code>**，然后输入合适的名称</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myVariable;</span><br></pre></td></tr></table></figure>
+
+<p><strong>备注：</strong> <strong>行末的分号表示当前语句结束，</strong>不过只有在单行内需要分割多条语句时，这个分号才是必须的。然而，一些人认为每条语句末尾加分号是一种好的风格。分号使用规则的更多细节请参阅 <a target="_blank" rel="noopener" href="http://news.codecademy.com/your-guide-to-semicolons-in-javascript/">JavaScript 分号使用指南</a>（英文页面）。</p>
+<p><strong>备注：</strong> <strong>几乎任何内容都可以作为变量名</strong>，但还是有一些限制（请参阅 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types#%E5%8F%98%E9%87%8F">变量命名规则</a>）。如果你不确定，还可以 <a target="_blank" rel="noopener" href="https://mothereff.in/js-variables">验证变量名</a> 是否有效。</p>
+<p><strong>备注：</strong> <strong>JavaScript 对大小写敏感，<code>myVariable</code> 和 <code>myvariable</code> 是不同的。如果代码出现问题了，先检查一下大小写！</strong></p>
+<p><strong>备注：</strong> 想要了解更多关于 <code>var</code> 和 <code>let</code> 的不同点，可以参阅 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/Variables#var_%E4%B8%8E_let_%E7%9A%84%E5%8C%BA%E5%88%AB">var 与 let 的区别</a>。</p>
+<p>![screenshot20231031 (12)](screenshot20231031 (12).png)</p>
+<p><strong>注意变量可以有不同的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Data_structures">数据类型</a> ：</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">变量</th>
+<th align="left">解释</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/String">String</a></td>
+<td align="left"><strong>字符串</strong>（一串文本）：字符串的值必须用引号（单双均可，必须成对）括起来。</td>
+<td align="left"><code>let myVariable = &#39;李雷&#39;;</code></td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Number">Number</a></td>
+<td align="left"><strong>数字：无需引号。</strong></td>
+<td align="left"><code>let myVariable = 10;</code></td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Boolean">Boolean</a></td>
+<td align="left">布尔值（真 &#x2F; 假）： <code>true</code>&#x2F;<code>false</code> 是 JS 里的特殊关键字，无需引号。</td>
+<td align="left"><code>let myVariable = true;</code></td>
+</tr>
+<tr>
+<td align="left"><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Array">Array</a></td>
+<td align="left"><strong>数组：用于在单一引用中存储多个值的结构。</strong></td>
+<td align="left"><code>let myVariable = [1, &#39;李雷&#39;, &#39;韩梅梅&#39;, 10];</code> 元素引用方法：<code>myVariable[0]</code>, <code>myVariable[1]</code> ……</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<p>变量有什么用呢？我们说，编程时它们无所不在。<strong>如果值无法改变，那么就无法做任何动态的工作</strong>，比如发送个性化的问候，或是改变在图片库当前展示的图片。</p>
+<h5 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h5><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Operator">运算符</a> 是一类数学符号，<strong>可以根据两个值（或变量）产生结果。以下表格中介绍了一些最简单的运算符，</strong>可以在浏览器控制台里尝试一下后面的示例。</p>
+<table>
+<thead>
+<tr>
+<th align="left">运算符</th>
+<th align="left">解释</th>
+<th align="left">符号</th>
+<th align="left">示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">加</td>
+<td align="left">将两个数字相加，或拼接两个字符串。</td>
+<td align="left"><code>+</code></td>
+<td align="left"><code>6 + 9;&quot;Hello &quot; + &quot;world!&quot;;</code></td>
+</tr>
+<tr>
+<td align="left">减、乘、除</td>
+<td align="left">这些运算符操作与基础算术一致。只是乘法写作星号，除法写作斜杠。</td>
+<td align="left"><code>-</code>, <code>*</code>, <code>/</code></td>
+<td align="left"><code>9 - 3;8 * 2; //乘法在 JS 中是一个星号9 / 3;</code></td>
+</tr>
+<tr>
+<td align="left">赋值运算符</td>
+<td align="left">为变量赋值（你之前已经见过这个符号了）</td>
+<td align="left"><code>=</code></td>
+<td align="left"><code>let myVariable = &#39;李雷&#39;;</code></td>
+</tr>
+<tr>
+<td align="left">等于</td>
+<td align="left">测试两个值是否相等，并返回一个 <code>true</code>&#x2F;<code>false</code> （布尔）值。</td>
+<td align="left"><strong><code>===</code></strong></td>
+<td align="left"><code>let myVariable = 3;myVariable === 4; // false</code></td>
+</tr>
+<tr>
+<td align="left">不等于</td>
+<td align="left">和等于运算符相反，测试两个值是否不相等，并返回一个 <code>true</code>&#x2F;<code>false</code> （布尔）值。</td>
+<td align="left"><strong><code>!==</code></strong></td>
+<td align="left"><code>let myVariable = 3;myVariable !== 3; // false</code></td>
+</tr>
+<tr>
+<td align="left">取非</td>
+<td align="left">返回逻辑相反的值，比如当前值为真，则返回 <code>false</code>。</td>
+<td align="left"><code>!</code></td>
+<td align="left">原式为真，但经取非后值为 <code>false</code>： <code>let myVariable = 3;!(myVariable === 3); // false</code></td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h5 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h5><p>条件语句是一种代码结构，用来测试表达式的真假，并根据测试结果运行不同的代码。一个常用的条件语句是 <code>if ... else</code>。下面是一个示例：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> iceCream = <span class="string">&quot;chocolate&quot;</span>;</span><br><span class="line"><span class="keyword">if</span> (iceCream === <span class="string">&quot;chocolate&quot;</span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&quot;我最喜欢巧克力冰激淋了。&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&quot;但是巧克力才是我的最爱呀……&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>if ( ... )</code> 中的<strong>表达式进行测试，</strong>用（上文所提到的）等于运算符来比较变量 <code>iceCream</code> 与字符串 <code>&#39;chocolate&#39;</code> 是否相等。<strong>如果返回 <code>true</code>，则运行第一个代码块；</strong><strong><strong>如果返回 <code>false</code>，则跳过第一块直接运行 <code>else</code> 之后的第二个代码块。</strong></strong></p>
+<h5 id="函数（function）"><a href="#函数（function）" class="headerlink" title="函数（function）"></a>函数（function）</h5><p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Function">函数</a> 用来<strong>封装可复用的功能。</strong>如果没有函数，一段特定的操作过程用几次就要重复写几次，而使用函数则只需写下函数名和一些简短的信息。之前已经涉及过一些函数，比如：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myVariable = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;h1&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="title function_">alert</span>(<span class="string">&quot;hello!&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p><code>document.querySelector</code> 和 <code>alert</code> 是浏览器<strong>内置的函数，随时可用。</strong></p>
+<p>如果代码中有一个<strong>类似变量名后加小括号 <code>()</code> 的东西</strong>，很可能就是一个函数。函数通常包括<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Argument">参数</a>，参数中保存着一些必要的数据。<strong>它们位于括号内部，多个参数之间用逗号分开</strong></p>
+<p>比如， <strong><code>alert()</code> 函数在浏览器窗口内弹出一个警告框，还应为其提供一个字符串参数，以告诉它警告框里要显示的内容。</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function multiply(num1, num2) &#123;</span><br><span class="line">  let result = num1 * num2;</span><br><span class="line">  return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>人人都能定义自己的函数。下面的示例是为两个参数进行乘法运算的函数：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">multiply</span>(<span class="params">num1, num2</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> result = num1 * num2;</span><br><span class="line">  <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p> <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/return"><code>return</code></a> 语句告诉浏览器当前函数返回 <code>result</code> 变量。这<strong>是一点很有必要，因为函数内定义的变量只能在函数内使用。这叫做变量的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Scope">作用域</a>。（详见 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Grammar_and_types#variable_scope">变量作用域</a>。）</strong></p>
+<h5 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h5><p>事件能为网页添加**真实的交互能力。它可以捕捉浏览器操作并运行一些代码做为响应。最简单的事件是<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/click_event">点击事件</a>**，鼠标的点击操作会触发该事件。可尝试将下面的代码输入到控制台，然后点击页面的任意位置：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;html&quot;</span>).<span class="title function_">addEventListener</span>(<span class="string">&quot;click&quot;</span>, <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">alert</span>(<span class="string">&quot;别戳我，我怕疼。&quot;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>将<strong>事件与元素绑定有许多方法。</strong>在这里选用了 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/html"><code>&lt;html&gt;</code></a> 元素，然后调用了它的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/EventTarget/addEventListener"><code>addEventListener()</code></a> 方法，将事件名称（<code>&#39;click&#39;</code>）以及其回调函数（当事件发生时，调用该函数）传入该函数中作为调用参数。</p>
+<p>刚刚我们传递给 <code>addEventListener()</code> 的函数被称为<em>匿名函数</em>，因为它没有名字。匿名函数还有另一种我们称之为<em>箭头函数</em>的写法，箭头函数使用 <code>() =&gt;</code> 代替 <code>function ()</code>：</p>
+<h4 id="完善示例网页"><a href="#完善示例网页" class="headerlink" title="完善示例网页"></a>完善示例网页</h4><p>现在你已经具备了一些JavaScript的基础，面来为示例网页添加一些更酷的特性。</p>
+<p><strong>设置一个图像切换器</strong></p>
+<p>这里将用新的 <strong>DOM API 为网页添加另一张图片，并用 JavaScript 使图片在点击时进行切换。</strong></p>
+<ol>
+<li>首先，<strong>找到另一张你想要在你的页面上展示的图片，且尺寸与第一张图片尽可能相同。</strong></li>
+<li>将这张图片储存在你的**<code>images</code>目录下**。</li>
+<li><strong>将图片重命名为’firefox2.png’（去掉引号）。</strong></li>
+<li>打开 <code>main.js</code> 文件，输入下面的 JavaScript 代码 ( 请删除刚才的 “hello world” 脚本)：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myImage = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;img&quot;</span>);</span><br><span class="line"></span><br><span class="line">myImage.<span class="property">onclick</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> mySrc = myImage.<span class="title function_">getAttribute</span>(<span class="string">&quot;src&quot;</span>);</span><br><span class="line">  <span class="keyword">if</span> (mySrc === <span class="string">&quot;images/firefox-icon.png&quot;</span>) &#123;</span><br><span class="line">    myImage.<span class="title function_">setAttribute</span>(<span class="string">&quot;src&quot;</span>, <span class="string">&quot;images/firefox2.png&quot;</span>);</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    myImage.<span class="title function_">setAttribute</span>(<span class="string">&quot;src&quot;</span>, <span class="string">&quot;images/firefox-icon.png&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>5.保存所有文件并用浏览器打开 <code>index.html</code> 。点击图片可以发现它能够切换了！</p>
+<p>这里首先把 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img"><img></a> 元素的引用存放在 <code>myImage</code> 变量里。然后将这个变量的 <code>onclick</code> 事件与一个匿名函数绑定。每次点击图片时：</p>
+<ol>
+<li>获取这张图片的 <code>src</code> 属性值。</li>
+<li><strong>用一个条件句来判断</strong> <strong>src的值是否等于原始图像的路径</strong><ol>
+<li>如果是，则<strong>将 <code>src</code> 的值改为第二张图片的路径，并在 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a> 内加载该图片。</strong></li>
+<li>如果不是（意味着它已经修改过）, 则把 <code>src</code> 的值重新设置为原始图片的路径，<strong>即原始状态。</strong></li>
+</ol>
+</li>
+</ol>
+<h5 id="添加个性化欢迎信息"><a href="#添加个性化欢迎信息" class="headerlink" title="添加个性化欢迎信息"></a>添加个性化欢迎信息</h5><p>下面来添加另一段代码，在用户初次进入站点时将网页的标题改成一段个性化欢迎信息（即在标题中添加用户的名字）。名字信息会由 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Web_Storage_API">Web Storage API</a> 保存下来，即使用户关闭页面之后再重新打开，仍可得到之前的信息。还会添加一个选项，可以根据需要改变用户名字以更新欢迎信息。</p>
+<p>1.打开 <code>index.html</code>，在 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a> 标签<strong>前</strong>添加以下代码，将在页面底部显示一个“切换用户”字样的按钮：</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span>&gt;</span>切换用户<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>2.将以下 JavaScript 代码原封不动添加到 <code>main.js</code> 文件底部，将获取新按钮和标题的引用，并保存至变量中：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> myButton = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;button&quot;</span>);</span><br><span class="line"><span class="keyword">let</span> myHeading = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&quot;h1&quot;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>3.然后添加以下函数来设置个性化欢迎信息。（函数需要在调用后生效，下文中提供了两种对该函数的调用方式）</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">setUserName</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> myName = <span class="title function_">prompt</span>(<span class="string">&quot;请输入你的名字。&quot;</span>);</span><br><span class="line">  <span class="variable language_">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&quot;name&quot;</span>, myName);</span><br><span class="line">  myHeading.<span class="property">textContent</span> = <span class="string">&quot;Mozilla 酷毙了，&quot;</span> + myName;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该函数首先调用了 <strong><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/prompt"><code>prompt()</code></a> 函数</strong>，与 <strong><code>alert()</code> 类似会弹出一个对话框</strong>。但是<strong>这里需要用户输入数据</strong>，并在确定后将数据存储在 <code>myName</code> 变量里。接下来将<strong>调用 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Window/localStorage"><code>localStorage</code></a> API，它可以将数据存储在浏览器中供后续获取。</strong>这里用 <strong><code>localStorage</code> 的 <code>setItem()</code> 函数来创建一个<code>&#39;name&#39;</code> 数据项，并把 <code>myName</code> 变量复制给它</strong>。<strong>最后将 <code>textContent</code> 属性设置为一个欢迎字符串加上这个新设置的名字。</strong></p>
+<p>4.接下来，添加以下的 <strong><code>if ... else</code> 块。我们可以称之为初始化代码，因为它在页面初次读取时进行构造工作：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (!<span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&quot;name&quot;</span>)) &#123;</span><br><span class="line">  <span class="title function_">setUserName</span>();</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">  <span class="keyword">let</span> storedName = <span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(<span class="string">&quot;name&quot;</span>);</span><br><span class="line">  myHeading.<span class="property">textContent</span> = <span class="string">&quot;Mozilla 酷毙了，&quot;</span> + storedName;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>这里首次使用了<strong>取非运算符（逻辑非，用 <code>!</code> 表示）</strong>来检测 <code>&#39;name&#39;</code> 数据是否存在。若不存在，调用 <code>setUserName()</code> 创建。若存在（即用户上次访问时设置过），调用 <code>getItem()</code> 获取保存的名字，像上文的 <code>setUserName()</code> 那样设置 <code>textContent</code>。</p>
+<p>5.最后，为按钮设置 <strong>onclick 事件处理器</strong>。<strong>按钮按下时运行 setUserName() 函数。</strong>这样用户就可以通过按这个按钮来自由设置新名字了：</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">myButton.<span class="property">onclick</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  <span class="title function_">setUserName</span>();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>第一次访问网页时，页面将询问用户名并发出一段个性化的信息。可随时点击按钮来改变用户名。告诉你一个<strong>额外的福利，因为用户名是保存在 <code>localStorage</code> 里的，网页关闭后也不会丢失，所以重新打开浏览器时所设置的名字信息将依然存在:)</strong></p>
+<h5 id="用户名为null？"><a href="#用户名为null？" class="headerlink" title="用户名为null？"></a>用户名为null？</h5><p>运行示例代码，弹出输入用户名的对话框，试着按下 取消 按钮。此时标题会显示为“Mozilla 酷毙了，null”。这是因为取消提示对话框后值将设置为 <code>null</code>，这是 JavaScript 中的一个特殊值，表示引用不存在。</p>
+<p>也可以不输入任何名字直接按 确认，你的标题会显示为“Mozilla 酷毙了，”，原因么显而易见。</p>
+<p>要避免这些问题，<strong>应该更新 <code>setUserName()</code> 来检查用户是否输入了 <code>null</code> 或者空名字：</strong></p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">setUserName</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> myName = <span class="title function_">prompt</span>(<span class="string">&quot;请输入你的名字。&quot;</span>);</span><br><span class="line">  <span class="keyword">if</span> (!myName) &#123;</span><br><span class="line">    <span class="title function_">setUserName</span>();</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="variable language_">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&quot;name&quot;</span>, myName);</span><br><span class="line">    myHeading.<span class="property">textContent</span> = <span class="string">&quot;Mozilla 酷毙了，&quot;</span> + myName;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>用人话说就是：如果 <code>myName</code> 没有值或值为 <code>null</code>，就再次从头运行<code>setUserName()</code>。如果有值（上面的表达式结果不为真），就把值存储到 <code>localStorage</code> 并且设置标题。</p>
+<h2 id="万维网如何工作"><a href="#万维网如何工作" class="headerlink" title="万维网如何工作"></a>万维网如何工作</h2><h3 id="客户端和服务器"><a href="#客户端和服务器" class="headerlink" title="客户端和服务器"></a>客户端和服务器</h3><p><img src="/2023/09/18/Web/screenshot20231101.png" alt="screenshot20231101"></p>
+<ul>
+<li>客户端是典型的 <strong>Web 用户入网设备</strong>（比如，你连接了 Wi-Fi 的电脑，或接入移动网络的手机）和设备上可联网的软件（通常使用像 Firefox 和 Chrome 的浏览器）。</li>
+<li>服务器是<strong>存储网页，站点和应用的计算机。</strong>当一个客户端设备想要获取一个网页时，<strong>一份网页的拷贝将从服务器上下载到客户端机器上来在用户浏览器上显示。</strong></li>
+</ul>
+<h3 id="详细的阐述"><a href="#详细的阐述" class="headerlink" title="详细的阐述"></a>详细的阐述</h3><p>除了客户端和服务器，我们还需要了解：</p>
+<p><strong>备注：</strong> 我感觉下面的比喻还不是很契合。我感觉再合理一点的比喻：</p>
+<p>假如你生活在一个封闭的村子叫做“盘溪新村”，村子盛产苹果。</p>
+<ul>
+<li><p><strong>互联网</strong>：好比地球上纵横交错的道路。</p>
+</li>
+<li><p><strong>网络连接</strong>：道路通到了村子路口。从此，村子里的苹果就可以运出去卖了。</p>
+</li>
+<li><p><strong>TCP&#x2F;IP</strong>（协议）：为了将村里的苹果能规范有效的运卖出去而不出问题，村长作出如下<strong>规定：“用规格刚好 20 cm * 20 cm * 20 cm 的泡沫箱来装，之后外面又用相应规格的纸箱包裹上，最后打上透明胶”。并且要求，对方收到时，一定要外包装完好，</strong>不然就会补发。而且还给对方发了一张发货单，明确说明了，苹果有多少，是用什么方法包装的，只有货和发货单对上了，对方才会确认收货。</p>
+</li>
+<li><p><strong>DNS</strong>：突然一天，郭德纲想吃苹果，就跟于谦说，“我听说盘溪新村<strong>（域名）</strong>的苹果好，要他们那个套餐一选项啊！”，于谦一听，得，也不知道盘溪新村在哪，<strong>打开地图查（DNS）吧，一查，好嘛，江苏省苏州市（IP 地址）</strong>，于是于谦去了苏州，找了村子，告诉村长，<strong>要套餐一，要用顺丰快递，并且留下了北京德云社的地址。</strong></p>
+</li>
+<li><p><strong>HTTP</strong>：过了几天，德云社的人一看，有快递来了，来了这么一句，“只收‘顺丰’，拒收其他快递”。司机忙说，“是顺丰，是顺丰”，这才对上暗号，德云社的人收下了货。</p>
+</li>
+<li><p>组成文件</p>
+<p>：送来的货可不止一车，而且也不止一种苹果，这车是红富士，那车黄富士的。</p>
+<ul>
+<li><strong>代码</strong>：有点像，村长事先安排的说明书，让司机到了地方，如何卸车，货放到什么位置，而德云社的看说明书，知道什么样的苹果放到什么位置上，什么样苹果如何食用最佳，等等。</li>
+<li><strong>资源</strong>：不同种类的苹果。</li>
+</ul>
+</li>
+</ul>
+<p>一点拙见，在下抛砖引玉，希望有更好理解的比喻。</p>
+<ul>
+<li><p><strong>网络连接</strong>: <strong>允许你在互联网上发送和接受数据。</strong>基本上和你家到商店的街道差不多。</p>
+</li>
+<li><p><strong>TCP&#x2F;IP</strong>: 传输控制协议和因特网互连协议是<strong>定义数据如何传输的通信协议。</strong>这就像你去商店购物所使用的交通方式，比如汽车或自行车（或是你能想到的其他可能）。</p>
+</li>
+<li><p><strong>DNS</strong>: 域名系统服务器像是<strong>一本网站通讯录。</strong>当你在浏览器内输入一个网址时，浏览器获取网页之前将会查看域名系统。浏览器需要找到存放你想要的网页的服务器，<strong>才能发送 HTTP 请求到正确的地方。就像你要知道商店的地址才能到达那。</strong></p>
+</li>
+<li><p><strong>HTTP</strong>: 超文本传输协议是一个定义客户端和服务器间交流的语言的协议（<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/Protocol">protocol</a> ）。就像你下订单时所说的话一样。</p>
+</li>
+<li><p>组成文件</p>
+<p>: 一个网页由许多文件组成，就像商店里不同的商品一样。这些文件有两种类型：</p>
+<ul>
+<li><strong>代码</strong> : 网页大体由 HTML、CSS、JavaScript 组成，不过你会在后面看到不同的技术。</li>
+<li><strong>资源</strong> : 这是其他组成网页的东西的集合，比如图像、音乐、视频、Word 文档、PDF 文件。</li>
+</ul>
+</li>
+</ul>
+<h3 id="工作本质"><a href="#工作本质" class="headerlink" title="工作本质"></a>工作本质</h3><p>当你在浏览器里输入一个网址时（在我们的例子里就是走向商店的路上时）：</p>
+<ol>
+<li>浏览器在域名系统（<strong>DNS）服务器上找出存放网页的服务器的实际地址（找出商店的位置）。</strong></li>
+<li>浏览器发送 <strong>HTTP 请求信息到服务器来请拷贝一份网页到客户端</strong>（你走到商店并下订单）。这条消息，包括其他所有在客户端和服务器之间<strong>传递的数据都是通过互联网使用 TCP&#x2F;IP 协议传输的。</strong></li>
+<li>服务器同意客户端的请求后，会返回一个<strong>“200 OK”信息</strong>，意味着“<strong>你可以查看这个网页，给你～</strong>”，然后开始将网页的文件以数据包的形式传输到浏览器（商店给你商品，你将商品带回家）。</li>
+<li><strong>浏览器将数据包聚集成完整的网页然后将网页呈现给你</strong>（商品到了你的门口 —— 新东西，好棒！）。</li>
+</ol>
+<h3 id="解析组成文件的顺序"><a href="#解析组成文件的顺序" class="headerlink" title="解析组成文件的顺序"></a>解析组成文件的顺序</h3><p>当浏览器向服务器发送请求获取 HTML 文件时，HTML 文件通常包含 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a> 和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/script"><code>&lt;script&gt;</code></a> 元素，这些元素分别指向了外部的 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/CSS">CSS</a> 样式表文件和 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript">JavaScript</a> 脚本文件。了解这些文件被<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work#%E8%A7%A3%E6%9E%90">浏览器解析</a>的顺序是很重要的：</p>
+<ul>
+<li>浏览器首先解析 <strong>HTML 文件</strong>，并从中识别出所有的 <code>&lt;link&gt;</code> 和 <code>&lt;script&gt;</code> 元素，<strong>获取它们指向的外部文件的链接。</strong></li>
+<li><strong>继续解析 HTML 文件的同时，浏览器根据外部文件的链接向服务器发送请求，获取并解析 CSS 文件和 JavaScript 脚本文件。</strong></li>
+<li>接着浏览器会给解析后的 <strong>HTML 文件</strong>生成一个 <strong><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model">DOM</a> 树</strong>（在内存中），会给<strong>解析后的 CSS 文件</strong>生成一个 <strong><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/CSSOM">CSSOM</a> 树</strong>（在内存中），并且会<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/Performance/How_browsers_work#%E5%85%B6%E4%BB%96%E8%BF%87%E7%A8%8B">编译和执行</a>解析后的 <strong>JavaScript 脚本文件。</strong></li>
+<li><strong>伴随着构建 DOM 树、应用 CSSOM 树的样式、以及执行 JavaScript 脚本文件，浏览器会在屏幕上绘制出网页的界面；用户看到网页界面也就可以跟网页进行交互了。</strong></li>
+</ul>
+<h3 id="DNS-解析"><a href="#DNS-解析" class="headerlink" title="DNS 解析"></a>DNS 解析</h3><p>真正的网址看上去并不像你输入到地址框中的那样美好且容易记忆。它们是一串数字，像 <strong><code>63.245.217.105</code>。</strong></p>
+<p>这叫做 <a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Glossary/IP_Address">IP 地址</a>，它代表了一个互联网上独特的位置。然而，它并不容易记忆，<strong>不是吗？那就是域名系统（DNS）被发明的原因。它们是将你输入浏览器的地址（像 “mozilla.org”）与实际 IP 地址相匹配的特殊的服务器。</strong></p>
+<p>网页可以通过 IP 地址直接访问。你可以通过在 <a target="_blank" rel="noopener" href="https://www.nslookup.io/website-to-ip-lookup/">DNS 查询工具</a> 等工具中输入域名来查找网站的 IP 地址。</p>
+<h3 id="数据包详解"><a href="#数据包详解" class="headerlink" title="数据包详解"></a>数据包详解</h3><p>前面我们用<strong>“包”来描述了数据从服务器到客户端传输的格式。</strong>这是什么意思？基本上，<strong>当数据在 Web 上传输时，是以成千上万的小数据块的形式传输的。大量不同的用户都可以同时下载同一个网页。如果网页以单个大的数据块形式传输，一次就只有一个用户下载，无疑会让 Web 非常没有效率并且失去很多乐趣。</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Satolu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/09/18/Web/">http://example.com/2023/09/18/Web/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Satolu's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Web/">Web</a></div><div class="post_share"><div class="social-share" data-image="/img/20210227075605_gxspt.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/09/18/The%20Missing%20Semester/" title="The Missing Semester——Shell的基本了解（Linux）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">The Missing Semester——Shell的基本了解（Linux）</div></div></a></div><div class="next-post pull-right"><a href="/2023/09/18/%E4%BA%BA%E7%A5%96%E4%BC%A0/" title="人祖传"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">人祖传</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/20210227075605_gxspt.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Satolu</div><div class="author-info__description">明悟在我</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xzb666-hub"><i class="fab fa-github"></i><span>不是好友直接点o.O</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">领域展开</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%BD%91%E7%AB%99%E7%BC%96%E8%BE%91"><span class="toc-number">1.</span> <span class="toc-text">基本网站编辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7"><span class="toc-number">1.1.</span> <span class="toc-text">使用的工具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E8%AE%A1%E5%A4%96%E8%A7%82"><span class="toc-number">1.2.</span> <span class="toc-text">设计外观</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">处理文件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%BD%91%E7%AB%99%E4%BF%9D%E5%AD%98"><span class="toc-number">1.3.1.</span> <span class="toc-text">网站保存</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%BD%91%E7%AB%99%E5%BA%94%E8%AF%A5%E6%98%AF%E4%BB%80%E4%B9%88%E7%BB%93%E6%9E%84"><span class="toc-number">1.4.</span> <span class="toc-text">测试网站应该是什么结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84"><span class="toc-number">1.5.</span> <span class="toc-text">文件路径</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E8%B7%AF%E5%BE%84%E7%9A%84%E4%B8%80%E4%BA%9B%E9%80%9A%E7%94%A8%E8%A7%84%E5%88%99%EF%BC%9A"><span class="toc-number">1.5.1.</span> <span class="toc-text">文件路径的一些通用规则：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E6%9C%9F%E6%95%88%E6%9E%9C"><span class="toc-number">1.6.</span> <span class="toc-text">预期效果</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%AB%AF%E4%B8%89%E4%BB%B6%E5%A5%97"><span class="toc-number">2.</span> <span class="toc-text">前端三件套</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E5%9F%BA%E7%A1%80"><span class="toc-number">2.1.</span> <span class="toc-text">HTML基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#WHAT-is-HTML"><span class="toc-number">2.1.1.</span> <span class="toc-text">WHAT is HTML</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E5%BA%94%E8%AF%A5%E5%8C%85%E5%90%AB%EF%BC%9A"><span class="toc-number">2.1.1.1.</span> <span class="toc-text">属性应该包含：</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B5%8C%E5%A5%97%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.2.</span> <span class="toc-text">嵌套元素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A9%BA%E5%85%83%E7%B4%A0"><span class="toc-number">2.1.3.</span> <span class="toc-text">空元素</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML%E6%96%87%E6%A1%A3%E8%AF%A6%E8%A7%A3"><span class="toc-number">2.2.</span> <span class="toc-text">HTML文档详解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F"><span class="toc-number">2.3.</span> <span class="toc-text">图像</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E8%AE%B0%E6%96%87%E6%9C%AC"><span class="toc-number">2.4.</span> <span class="toc-text">标记文本</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%EF%BC%88Heading%EF%BC%89"><span class="toc-number">2.4.1.</span> <span class="toc-text">标题（Heading）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD"><span class="toc-number">2.4.2.</span> <span class="toc-text">段落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">2.4.3.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-number">2.4.4.</span> <span class="toc-text">链接</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E5%9F%BA%E7%A1%80"><span class="toc-number">2.5.</span> <span class="toc-text">CSS基础</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#WHAT-is-CSS"><span class="toc-number">2.5.1.</span> <span class="toc-text">WHAT  is CSS</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">2.5.2.</span> <span class="toc-text">CSS工作原理</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E5%99%A8%EF%BC%88Selector%EF%BC%89"><span class="toc-number">2.5.2.1.</span> <span class="toc-text">选择器（Selector）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E%EF%BC%88Declaration%EF%BC%89"><span class="toc-number">2.5.2.2.</span> <span class="toc-text">声明（Declaration）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%EF%BC%88Properties%EF%BC%89"><span class="toc-number">2.5.2.3.</span> <span class="toc-text">属性（Properties）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%B1%9E%E6%80%A7%E7%9A%84%E5%80%BC%EF%BC%88Property-value%EF%BC%89"><span class="toc-number">2.5.2.4.</span> <span class="toc-text">属性的值（Property value）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E5%92%8C%E6%96%87%E6%9C%AC"><span class="toc-number">2.5.2.5.</span> <span class="toc-text">字体和文本</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS-%E4%B8%80%E5%88%87%E7%9A%86%E7%9B%92%E5%AD%90"><span class="toc-number">2.5.3.</span> <span class="toc-text">CSS:一切皆盒子</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9B%B4%E6%94%B9%E9%A1%B5%E9%9D%A2%E9%A2%9C%E8%89%B2"><span class="toc-number">2.5.3.1.</span> <span class="toc-text">更改页面颜色</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%96%87%E6%A1%A3%E4%BD%93%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.5.3.2.</span> <span class="toc-text">文档体样式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%BD%8D%E9%A1%B5%E9%9D%A2%E4%B8%BB%E6%A0%87%E9%A2%98%E4%BB%A5%E5%8F%8A%E6%B7%BB%E5%8A%A0%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.5.3.3.</span> <span class="toc-text">定位页面主标题以及添加样式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%BE%E5%83%8F%E5%B1%85%E4%B8%AD"><span class="toc-number">2.5.3.4.</span> <span class="toc-text">图像居中</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#JavaScript"><span class="toc-number">2.5.4.</span> <span class="toc-text">JavaScript</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#WHAT-IS-JavaScript"><span class="toc-number">2.5.4.1.</span> <span class="toc-text">WHAT IS JavaScript</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E2%80%9CHello-World-%E2%80%9D%E7%A4%BA%E4%BE%8B"><span class="toc-number">2.5.4.2.</span> <span class="toc-text">“Hello World!”示例</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Javascript%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8"><span class="toc-number">2.5.5.</span> <span class="toc-text">Javascript快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%EF%BC%88Variable%EF%BC%89"><span class="toc-number">2.5.5.1.</span> <span class="toc-text">变量（Variable）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-number">2.5.5.2.</span> <span class="toc-text">运算符</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-number">2.5.5.3.</span> <span class="toc-text">条件语句</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%EF%BC%88function%EF%BC%89"><span class="toc-number">2.5.5.4.</span> <span class="toc-text">函数（function）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.5.5.5.</span> <span class="toc-text">事件</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%8C%E5%96%84%E7%A4%BA%E4%BE%8B%E7%BD%91%E9%A1%B5"><span class="toc-number">2.5.6.</span> <span class="toc-text">完善示例网页</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E4%B8%AA%E6%80%A7%E5%8C%96%E6%AC%A2%E8%BF%8E%E4%BF%A1%E6%81%AF"><span class="toc-number">2.5.6.1.</span> <span class="toc-text">添加个性化欢迎信息</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E5%90%8D%E4%B8%BAnull%EF%BC%9F"><span class="toc-number">2.5.6.2.</span> <span class="toc-text">用户名为null？</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%87%E7%BB%B4%E7%BD%91%E5%A6%82%E4%BD%95%E5%B7%A5%E4%BD%9C"><span class="toc-number">3.</span> <span class="toc-text">万维网如何工作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="toc-number">3.1.</span> <span class="toc-text">客户端和服务器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%A6%E7%BB%86%E7%9A%84%E9%98%90%E8%BF%B0"><span class="toc-number">3.2.</span> <span class="toc-text">详细的阐述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E6%9C%AC%E8%B4%A8"><span class="toc-number">3.3.</span> <span class="toc-text">工作本质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%9E%90%E7%BB%84%E6%88%90%E6%96%87%E4%BB%B6%E7%9A%84%E9%A1%BA%E5%BA%8F"><span class="toc-number">3.4.</span> <span class="toc-text">解析组成文件的顺序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DNS-%E8%A7%A3%E6%9E%90"><span class="toc-number">3.5.</span> <span class="toc-text">DNS 解析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%8C%85%E8%AF%A6%E8%A7%A3"><span class="toc-number">3.6.</span> <span class="toc-text">数据包详解</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/12/%E5%AF%BC%E8%AE%BA%E7%94%84%E9%80%89/" title="导论甄选">导论甄选</a><time datetime="2023-10-12T08:31:50.000Z" title="发表于 2023-10-12 16:31:50">2023-10-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/18/The%20Missing%20Semester/" title="The Missing Semester——Shell的基本了解（Linux）">The Missing Semester——Shell的基本了解（Linux）</a><time datetime="2023-09-18T15:09:07.000Z" title="发表于 2023-09-18 23:09:07">2023-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/18/Web/" title="Web入门">Web入门</a><time datetime="2023-09-18T15:09:07.000Z" title="发表于 2023-09-18 23:09:07">2023-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/18/%E4%BA%BA%E7%A5%96%E4%BC%A0/" title="人祖传">人祖传</a><time datetime="2023-09-18T15:09:07.000Z" title="发表于 2023-09-18 23:09:07">2023-09-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/" title="鲲鹏基座-跨平台软件转移原理">鲲鹏基座-跨平台软件转移原理</a><time datetime="2023-09-18T15:09:07.000Z" title="发表于 2023-09-18 23:09:07">2023-09-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 By Satolu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
