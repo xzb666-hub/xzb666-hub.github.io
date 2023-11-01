@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>The Missing Semester——Shell的基本了解（Linux）</title>
+      <link href="/2023/09/18/The%20Missing%20Semester/"/>
+      <url>/2023/09/18/The%20Missing%20Semester/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="第一部分：Shell"><a href="#第一部分：Shell" class="headerlink" title="第一部分：Shell"></a>第一部分：Shell</h2><p> 倘若你接触计算机且深入的学习它，你会可视化界面是很受限的。此时命令行工具（Shell）便是帮助我们与计算机进行更多交互，完成更多工作的核心。<br> 当你打开一个终端可能会出现接下来的字眼：(xzb666㉿XZB)-[ ~ ]<br>Q： 倘若了解我的人看这个可能会有点蒙 为什么打开的终端上面会显示xzb666和XZB呢？<br>A： xzb666是我虚拟机的username XZB则是我虚拟机的真实名  至于~则是我的根目录 也就是我当前所处的path 他们在终端中只起到一个作用 就是命令行提示符（Shell prompt）<br>Q：打开终端后好像需要输入什么 这是为什么呢<br>A：Terminal是你和shell交互 传递目标活动（command）的工具 在里面输入指令后计算机会进行对应的处理</p><h2 id="第二部分：How-to-use-Shell"><a href="#第二部分：How-to-use-Shell" class="headerlink" title="第二部分：How to use Shell"></a>第二部分：How to use Shell</h2><p> 第一次打开shell 不妨尝试先输入date试试 这将会是你第一次和计算机的非可视化界面交互 在交互过程中你向计算机输入对应date的command，计算机在处理后输出对应的具体时间 在这个过程中计算机的程序不会做任何的改变<br> 接下来让我们进阶的深入了解一下Shell这个工具——对应的输入参数（argument）的环节~<br> Po：argument_一些紧跟在程序名后面 用空格隔开的东西<br> 🔺Warning：正因为上述的argument参数使用空格分开 所以当你想要创建一个名为my photo的目录 倘若你在终端中输入mkdir my photo 那么他将会创建出两个目录——my和photo（💦）<br> （1）echo<br> 这仅仅只是起到一个print参数的作用（最基本的参数应用了） </p><h2 id="第三部分：How-the-Shell-work"><a href="#第三部分：How-the-Shell-work" class="headerlink" title="第三部分：How the Shell work"></a>第三部分：How the Shell work</h2><p> 这涉及到计算机内嵌（built in）的程序-这些程序位于你的文件系统（File System） Shell则是依靠环境变量也就是（Environment Variable）来定位这些程序，这就是为什么我们在下载很多工具时都需要配置环境变量以便于使其在终端（Terminal）中得到认可（Bushi），如此一来我们才能应用这些工具解决一些问题<br> ▲Po：PATH变量（路径变量）便是环境变量中先帝而言比较常用的部分 当我们在终端中输入echo ＄PATH 终端窗口便会输出一些我电脑上的目录 而那些目录便是Shell定位程序的关键目录la<br> 绝对路径——对应指令PATH 绝对准确的定位一个文件的路径 Example：Linux从根目录呈现到对应一个文件的完整路径<br> 相对路径——对应指令pwd（print working directory） 在当前工作目录下的路径 只会给出路径最后一段的路径 但你可以通过这个转换目录通过cd</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Basic Tool Using </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Web入门</title>
       <link href="/2023/09/18/Web/"/>
       <url>/2023/09/18/Web/</url>
@@ -72,25 +91,6 @@
         <tags>
             
             <tag> 激励自己 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>The Missing Semester——Shell的基本了解（Linux）</title>
-      <link href="/2023/09/18/The%20Missing%20Semester/"/>
-      <url>/2023/09/18/The%20Missing%20Semester/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="第一部分：Shell"><a href="#第一部分：Shell" class="headerlink" title="第一部分：Shell"></a>第一部分：Shell</h2><p> 倘若你接触计算机且深入的学习它，你会可视化界面是很受限的。此时命令行工具（Shell）便是帮助我们与计算机进行更多交互，完成更多工作的核心。<br> 当你打开一个终端可能会出现接下来的字眼：(xzb666㉿XZB)-[ ~ ]<br>Q： 倘若了解我的人看这个可能会有点蒙 为什么打开的终端上面会显示xzb666和XZB呢？<br>A： xzb666是我虚拟机的username XZB则是我虚拟机的真实名  至于~则是我的根目录 也就是我当前所处的path 他们在终端中只起到一个作用 就是命令行提示符（Shell prompt）<br>Q：打开终端后好像需要输入什么 这是为什么呢<br>A：Terminal是你和shell交互 传递目标活动（command）的工具 在里面输入指令后计算机会进行对应的处理</p><h2 id="第二部分：How-to-use-Shell"><a href="#第二部分：How-to-use-Shell" class="headerlink" title="第二部分：How to use Shell"></a>第二部分：How to use Shell</h2><p> 第一次打开shell 不妨尝试先输入date试试 这将会是你第一次和计算机的非可视化界面交互 在交互过程中你向计算机输入对应date的command，计算机在处理后输出对应的具体时间 在这个过程中计算机的程序不会做任何的改变<br> 接下来让我们进阶的深入了解一下Shell这个工具——对应的输入参数（argument）的环节~<br> Po：argument_一些紧跟在程序名后面 用空格隔开的东西<br> 🔺Warning：正因为上述的argument参数使用空格分开 所以当你想要创建一个名为my photo的目录 倘若你在终端中输入mkdir my photo 那么他将会创建出两个目录——my和photo（💦）<br> （1）echo<br> 这仅仅只是起到一个print参数的作用（最基本的参数应用了） </p><h2 id="第三部分：How-the-Shell-work"><a href="#第三部分：How-the-Shell-work" class="headerlink" title="第三部分：How the Shell work"></a>第三部分：How the Shell work</h2><p> 这涉及到计算机内嵌（built in）的程序-这些程序位于你的文件系统（File System） Shell则是依靠环境变量也就是（Environment Variable）来定位这些程序，这就是为什么我们在下载很多工具时都需要配置环境变量以便于使其在终端（Terminal）中得到认可（Bushi），如此一来我们才能应用这些工具解决一些问题<br> ▲Po：PATH变量（路径变量）便是环境变量中先帝而言比较常用的部分 当我们在终端中输入echo ＄PATH 终端窗口便会输出一些我电脑上的目录 而那些目录便是Shell定位程序的关键目录la<br> 绝对路径——对应指令PATH 绝对准确的定位一个文件的路径 Example：Linux从根目录呈现到对应一个文件的完整路径<br> 相对路径——对应指令pwd（print working directory） 在当前工作目录下的路径 只会给出路径最后一段的路径 但你可以通过这个转换目录通过cd</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Basic Tool Using </tag>
             
         </tags>
       
