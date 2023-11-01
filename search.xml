@@ -23,25 +23,6 @@
     
     
     <entry>
-      <title>The Missing Semester——Shell的基本了解（Linux）</title>
-      <link href="/2023/09/18/The%20Missing%20Semester/"/>
-      <url>/2023/09/18/The%20Missing%20Semester/</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="第一部分：Shell"><a href="#第一部分：Shell" class="headerlink" title="第一部分：Shell"></a>第一部分：Shell</h2><p> 倘若你接触计算机且深入的学习它，你会可视化界面是很受限的。此时命令行工具（Shell）便是帮助我们与计算机进行更多交互，完成更多工作的核心。<br> 当你打开一个终端可能会出现接下来的字眼：(xzb666㉿XZB)-[ ~ ]<br>Q： 倘若了解我的人看这个可能会有点蒙 为什么打开的终端上面会显示xzb666和XZB呢？<br>A： xzb666是我虚拟机的username XZB则是我虚拟机的真实名  至于~则是我的根目录 也就是我当前所处的path 他们在终端中只起到一个作用 就是命令行提示符（Shell prompt）<br>Q：打开终端后好像需要输入什么 这是为什么呢<br>A：Terminal是你和shell交互 传递目标活动（command）的工具 在里面输入指令后计算机会进行对应的处理</p><h2 id="第二部分：How-to-use-Shell"><a href="#第二部分：How-to-use-Shell" class="headerlink" title="第二部分：How to use Shell"></a>第二部分：How to use Shell</h2><p> 第一次打开shell 不妨尝试先输入date试试 这将会是你第一次和计算机的非可视化界面交互 在交互过程中你向计算机输入对应date的command，计算机在处理后输出对应的具体时间 在这个过程中计算机的程序不会做任何的改变<br> 接下来让我们进阶的深入了解一下Shell这个工具——对应的输入参数（argument）的环节~<br> Po：argument_一些紧跟在程序名后面 用空格隔开的东西<br> 🔺Warning：正因为上述的argument参数使用空格分开 所以当你想要创建一个名为my photo的目录 倘若你在终端中输入mkdir my photo 那么他将会创建出两个目录——my和photo（💦）<br> （1）echo<br> 这仅仅只是起到一个print参数的作用（最基本的参数应用了） </p><h2 id="第三部分：How-the-Shell-work"><a href="#第三部分：How-the-Shell-work" class="headerlink" title="第三部分：How the Shell work"></a>第三部分：How the Shell work</h2><p> 这涉及到计算机内嵌（built in）的程序-这些程序位于你的文件系统（File System） Shell则是依靠环境变量也就是（Environment Variable）来定位这些程序，这就是为什么我们在下载很多工具时都需要配置环境变量以便于使其在终端（Terminal）中得到认可（Bushi），如此一来我们才能应用这些工具解决一些问题<br> ▲Po：PATH变量（路径变量）便是环境变量中先帝而言比较常用的部分 当我们在终端中输入echo ＄PATH 终端窗口便会输出一些我电脑上的目录 而那些目录便是Shell定位程序的关键目录la<br> 绝对路径——对应指令PATH 绝对准确的定位一个文件的路径 Example：Linux从根目录呈现到对应一个文件的完整路径<br> 相对路径——对应指令pwd（print working directory） 在当前工作目录下的路径 只会给出路径最后一段的路径 但你可以通过这个转换目录通过cd</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> Basic Tool Using </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Web入门</title>
       <link href="/2023/09/18/Web/"/>
       <url>/2023/09/18/Web/</url>
@@ -53,6 +34,25 @@
         <tags>
             
             <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>鲲鹏基座-跨平台软件转移原理</title>
+      <link href="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/"/>
+      <url>/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>title：鲲鹏基座-跨平台软件转移</p><p>date：2023-10-14</p><p>tags：lecture</p><hr><h1 id="鲲鹏生态"><a href="#鲲鹏生态" class="headerlink" title="鲲鹏生态"></a>鲲鹏生态</h1><h2 id="算力时代"><a href="#算力时代" class="headerlink" title="算力时代"></a>算力时代</h2><p>数据是生产资料 算力是生产力</p><p>非结构数据占比越来越大 对于其加工处理及传输，需要更多算法给予匹配</p><p><strong>鲲鹏具有完备的硬件软件生态</strong></p><p>🔺当前需求：中国计算机产业重构， 计算底座和算力方面需要提升</p><h2 id="鲲鹏小课堂"><a href="#鲲鹏小课堂" class="headerlink" title="鲲鹏小课堂"></a>鲲鹏小课堂</h2><h2 id="介绍产品环节-软件迁移"><a href="#介绍产品环节-软件迁移" class="headerlink" title="介绍产品环节-软件迁移"></a>介绍产品环节-软件迁移</h2><h3 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h3><p>软件迁移是将一种<strong>计算机上的软件转置到其他计算机（不用的运行环境）</strong>上的能力</p><p><strong>X86(复杂指令集)和鲲鹏（简单指令集）</strong></p><p>Example </p><p>当你使用C语言（<strong>编译型语言</strong>）在X86复杂指令集中编译运行HelloWorld程序，并将其直接拷贝到鲲鹏中编译运行。会发现在鲲鹏中无法直接使用</p><p>经过反编译 <strong>基本可以确定三点硬件原因</strong></p><p>：X86指令长度不固定，鲲鹏反之</p><p>：汇编指令不同</p><p>：寄存器名字不同</p><p>C语言<strong>底层逻辑无法正常运行</strong>，在硬件上否定了直接迁移的可能</p><p>技术栈找根本原因：*<em>计算技术栈与程序执行过程不同</em></p><p>C语言在编译器编译后会转化为汇编语言 <strong>同时程序执行由于X86指令集同鲲鹏有很大不同 因而无法执行</strong></p><h3 id="HOW"><a href="#HOW" class="headerlink" title="HOW"></a>HOW</h3><p><strong>生成编译脚本-寻找编译错误-修改代码(类似替换X86为鲲鹏的内源汇编函数)</strong></p><p>迁移总结如图</p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142645.jpg" alt="QQ图片20231015142645"></p><h3 id="Kunpeng-DevKit-自动化迁移，极简开发"><a href="#Kunpeng-DevKit-自动化迁移，极简开发" class="headerlink" title="Kunpeng DevKit 自动化迁移，极简开发"></a>Kunpeng DevKit 自动化迁移，极简开发</h3><p>核心：对软件包，源代码，依赖库文件进行全面分析，修正不同指令集之间的差异。甚至可以做到<strong>无源码迁移</strong>，对代码动态修改使其达到不同环境下成功编译为相应指令集的效果。</p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142732.jpg" alt="QQ图片20231015142728"></p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142713.jpg" alt="QQ图片20231015142713"></p><h1 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h1><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142708-1697354522858-3.jpg" alt="QQ图片20231015142708"><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142656.jpg" alt="QQ图片20231015142659"></p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142659-1697354569158-7.jpg" alt="QQ图片20231015142659"><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142703.jpg"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 讲座learning </tag>
             
         </tags>
       
@@ -80,17 +80,17 @@
     
     
     <entry>
-      <title>鲲鹏基座-跨平台软件转移原理</title>
-      <link href="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/"/>
-      <url>/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/</url>
+      <title>The Missing Semester——Shell的基本了解（Linux）</title>
+      <link href="/2023/09/18/The%20Missing%20Semester/"/>
+      <url>/2023/09/18/The%20Missing%20Semester/</url>
       
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>title：鲲鹏基座-跨平台软件转移</p><p>date：2023-10-14</p><p>tags：lecture</p><hr><h1 id="鲲鹏生态"><a href="#鲲鹏生态" class="headerlink" title="鲲鹏生态"></a>鲲鹏生态</h1><h2 id="算力时代"><a href="#算力时代" class="headerlink" title="算力时代"></a>算力时代</h2><p>数据是生产资料 算力是生产力</p><p>非结构数据占比越来越大 对于其加工处理及传输，需要更多算法给予匹配</p><p><strong>鲲鹏具有完备的硬件软件生态</strong></p><p>🔺当前需求：中国计算机产业重构， 计算底座和算力方面需要提升</p><h2 id="鲲鹏小课堂"><a href="#鲲鹏小课堂" class="headerlink" title="鲲鹏小课堂"></a>鲲鹏小课堂</h2><h2 id="介绍产品环节-软件迁移"><a href="#介绍产品环节-软件迁移" class="headerlink" title="介绍产品环节-软件迁移"></a>介绍产品环节-软件迁移</h2><h3 id="WHAT"><a href="#WHAT" class="headerlink" title="WHAT"></a>WHAT</h3><p>软件迁移是将一种<strong>计算机上的软件转置到其他计算机（不用的运行环境）</strong>上的能力</p><p><strong>X86(复杂指令集)和鲲鹏（简单指令集）</strong></p><p>Example </p><p>当你使用C语言（<strong>编译型语言</strong>）在X86复杂指令集中编译运行HelloWorld程序，并将其直接拷贝到鲲鹏中编译运行。会发现在鲲鹏中无法直接使用</p><p>经过反编译 <strong>基本可以确定三点硬件原因</strong></p><p>：X86指令长度不固定，鲲鹏反之</p><p>：汇编指令不同</p><p>：寄存器名字不同</p><p>C语言<strong>底层逻辑无法正常运行</strong>，在硬件上否定了直接迁移的可能</p><p>技术栈找根本原因：*<em>计算技术栈与程序执行过程不同</em></p><p>C语言在编译器编译后会转化为汇编语言 <strong>同时程序执行由于X86指令集同鲲鹏有很大不同 因而无法执行</strong></p><h3 id="HOW"><a href="#HOW" class="headerlink" title="HOW"></a>HOW</h3><p><strong>生成编译脚本-寻找编译错误-修改代码(类似替换X86为鲲鹏的内源汇编函数)</strong></p><p>迁移总结如图</p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142645.jpg" alt="QQ图片20231015142645"></p><h3 id="Kunpeng-DevKit-自动化迁移，极简开发"><a href="#Kunpeng-DevKit-自动化迁移，极简开发" class="headerlink" title="Kunpeng DevKit 自动化迁移，极简开发"></a>Kunpeng DevKit 自动化迁移，极简开发</h3><p>核心：对软件包，源代码，依赖库文件进行全面分析，修正不同指令集之间的差异。甚至可以做到<strong>无源码迁移</strong>，对代码动态修改使其达到不同环境下成功编译为相应指令集的效果。</p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142732.jpg" alt="QQ图片20231015142728"></p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142713.jpg" alt="QQ图片20231015142713"></p><h1 id="基本原理"><a href="#基本原理" class="headerlink" title="基本原理"></a>基本原理</h1><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142708-1697354522858-3.jpg" alt="QQ图片20231015142708"><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142656.jpg" alt="QQ图片20231015142659"></p><p><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142659-1697354569158-7.jpg" alt="QQ图片20231015142659"><img src="/2023/09/18/%E9%B2%B2%E9%B9%8F%E5%9F%BA%E5%BA%A7-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BD%AF%E4%BB%B6%E8%BD%AC%E7%A7%BB/QQ%E5%9B%BE%E7%89%8720231015142703.jpg"></p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="第一部分：Shell"><a href="#第一部分：Shell" class="headerlink" title="第一部分：Shell"></a>第一部分：Shell</h2><p> 倘若你接触计算机且深入的学习它，你会可视化界面是很受限的。此时命令行工具（Shell）便是帮助我们与计算机进行更多交互，完成更多工作的核心。<br> 当你打开一个终端可能会出现接下来的字眼：(xzb666㉿XZB)-[ ~ ]<br>Q： 倘若了解我的人看这个可能会有点蒙 为什么打开的终端上面会显示xzb666和XZB呢？<br>A： xzb666是我虚拟机的username XZB则是我虚拟机的真实名  至于~则是我的根目录 也就是我当前所处的path 他们在终端中只起到一个作用 就是命令行提示符（Shell prompt）<br>Q：打开终端后好像需要输入什么 这是为什么呢<br>A：Terminal是你和shell交互 传递目标活动（command）的工具 在里面输入指令后计算机会进行对应的处理</p><h2 id="第二部分：How-to-use-Shell"><a href="#第二部分：How-to-use-Shell" class="headerlink" title="第二部分：How to use Shell"></a>第二部分：How to use Shell</h2><p> 第一次打开shell 不妨尝试先输入date试试 这将会是你第一次和计算机的非可视化界面交互 在交互过程中你向计算机输入对应date的command，计算机在处理后输出对应的具体时间 在这个过程中计算机的程序不会做任何的改变<br> 接下来让我们进阶的深入了解一下Shell这个工具——对应的输入参数（argument）的环节~<br> Po：argument_一些紧跟在程序名后面 用空格隔开的东西<br> 🔺Warning：正因为上述的argument参数使用空格分开 所以当你想要创建一个名为my photo的目录 倘若你在终端中输入mkdir my photo 那么他将会创建出两个目录——my和photo（💦）<br> （1）echo<br> 这仅仅只是起到一个print参数的作用（最基本的参数应用了） </p><h2 id="第三部分：How-the-Shell-work"><a href="#第三部分：How-the-Shell-work" class="headerlink" title="第三部分：How the Shell work"></a>第三部分：How the Shell work</h2><p> 这涉及到计算机内嵌（built in）的程序-这些程序位于你的文件系统（File System） Shell则是依靠环境变量也就是（Environment Variable）来定位这些程序，这就是为什么我们在下载很多工具时都需要配置环境变量以便于使其在终端（Terminal）中得到认可（Bushi），如此一来我们才能应用这些工具解决一些问题<br> ▲Po：PATH变量（路径变量）便是环境变量中先帝而言比较常用的部分 当我们在终端中输入echo ＄PATH 终端窗口便会输出一些我电脑上的目录 而那些目录便是Shell定位程序的关键目录la<br> 绝对路径——对应指令PATH 绝对准确的定位一个文件的路径 Example：Linux从根目录呈现到对应一个文件的完整路径<br> 相对路径——对应指令pwd（print working directory） 在当前工作目录下的路径 只会给出路径最后一段的路径 但你可以通过这个转换目录通过cd</p>]]></content>
       
       
       
         <tags>
             
-            <tag> 讲座learning </tag>
+            <tag> Basic Tool Using </tag>
             
         </tags>
       
