@@ -1,0 +1,993 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>Satoru's Blog | Satoru's Blog</title><meta name="author" content="Satoru"><meta name="copyright" content="Satoru"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="Satoru's Blog"><meta name="application-name" content="Satoru's Blog"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="Satoru's Blog"><meta property="og:url" content="http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/index.html"><meta property="og:site_name" content="Satoru's Blog"><meta property="og:description" content="Linux 和 Shell 简介Linux 是一种操作系统， 就像 macOS 和 Windows 一样。 它驱动了绝大多数的互联网服务器，是构建任何设施的“地基”，但还不仅如此。 Android 操作系统（中文也称“安卓”）实际上是基于（一种修改版的）Linux 构建的 Linux 可以让你拥有用"><meta property="og:locale" content="en"><meta property="og:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta property="article:author" content="Satoru"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg"><meta name="description" content="Linux 和 Shell 简介Linux 是一种操作系统， 就像 macOS 和 Windows 一样。 它驱动了绝大多数的互联网服务器，是构建任何设施的“地基”，但还不仅如此。 Android 操作系统（中文也称“安卓”）实际上是基于（一种修改版的）Linux 构建的 Linux 可以让你拥有用"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"><link rel="preconnect" href="//cdn.cbd.int"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: undefined,
+  peoplecanvas: {"enable":true,"img":"https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png"},
+  postHeadAiDescription: {"enable":true,"gptName":"AnZhiYu","mode":"local","switchBtn":false,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":"xxxx","Referer":"https://xx.xx/"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w 不要走！再看看嘛！","backTitle":"♪(^∇^*)欢迎肥来！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: '',
+  commentBarrageConfig:undefined,
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: true,
+  mainTone: undefined,
+  authorStatus: undefined,
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简","rightMenuMsgToTraditionalChinese":"转为繁体","rightMenuMsgToSimplifiedChinese":"转为简体"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":false,"limitCount":50,"languages":{"author":"Author: Satoru","link":"Link: ","source":"Source: Satoru's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: undefined,
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: 'Satoru's Blog',
+  title: 'Satoru\'s Blog',
+  postAI: '',
+  pageFillDescription: 'Linux 和 Shell 简介, 什么是 Linux 的 Shell？, Linux 中的 man 命令（man！）, Linux 中的 ls 命令, Linux 中的 cd 命令, Linux 中的 pwd 命令, Linux 中的 mkdir 命令, Linux 中的 rmdir 命令, Linux 中的 mv 命令, Linux 中的 cp 命令, Linux 中的 open 命令, Linux 中的 touch 命令, Linux 中的 find 命令, Linux 中的 ln 命令, 硬链接, 软链接, Linux 中的 gzip 命令, Linux 中的 gunzip 命令, Linux 中的 tar 命令, Linux 中的 cat 命令, Linux 中的 less 命令, Linux 中的 tail 命令, Linux 中的 wc 命令, Linux 中的 grep 命令, Linux 中的 sort 命令, Linux 中的 diff 命令, Linux 中的 echo 命令, Linux 中的 chown 命令, Linux 中的 chmod 命令, Linux 中的 umask 命令, Linux 中的 du 命令, Linux 中的 df 命令, Linux 中的 basename 命令, Linux 中的 dirname 命令, Linux 中的 ps 命令, Linux 中的 top 命令, Linux 中的 kill 命令, Linux 中的 killall 命令, Linux 中的 jobs 命令, Linux 中的 bg 命令, Linux 中的 fg 命令, Linux 中的 type 命令, Linux 中的 which 命令, Linux 中的 nohup 命令和简介是一种操作系统就像和一样它驱动了绝大多数的互联网服务器是构建任何设施的地基但还不仅如此操作系统中文也称安卓实际上是基于一种修改版的构建的可以让你拥有用计算机做任何事情的自由这是微软苹果谷歌这样的大公司永远不会向用户提供的什么是的通常指的是命令行界面的解析器简单来说它给用户提供一个操作界面来访问底层的操作系统内核进行工作它可以让你使用文本和命令执行操作同时还提供诸如创建脚本之类的高级功能这很重要为用户提供了一种比图形用户界面更为高效的方式来做事命令行工具可以提供更多不同的参数设置但用起来不会变得太复杂有很多种这里主要介绍通常在和电脑上都可以见到经过长年发展很多人为这些系统开发了不同种类的其中有一些是最主要的比如等当然还有更多所有的都从发展而来我们把它叫做名字中的是取自它的创建人史蒂夫伯恩如果你在使用可以试试打开终端默认的一般是在版本之前默认是你可以在你的系统上配置和运行各种譬如我使用的是每一种都有其独特的功能和高级的用法但在大多数的操作上是相通的它们可以让你执行程序你也可以对它们进行编程在本手册的余下部分我们将详细探究那些人们最常用到的命令中的命令每当我不记得某条命令的用法时我会输入命令名获取它的说明如果我需要快速了解某个命令的用法我会访问一个叫做的网站它也可以作为一条命令安装在你的电脑上比如你可以运行命令名它就会快速提供这条命令的概述需要注意的是这条命令并不是的替代品而只是一个帮助你摆脱迷失在页面上大量信息里的便利工具之后你还是可以在页面查阅某个命令可用的不同选项和详细参数以及一些常见的使用场景和用法指引屏幕截图的基本命令屏幕截图这是一个取自的缩写页面页面是你学习开发时的必备工具它通常包含非常多的信息有时几乎可以说太多了中的命令在文件夹内你可以使用命令列出其中包含的全部文件如果你在后面加上别的文件夹名字或者路径它就会列出那个文件夹的内容屏幕截图的基本命令屏幕截图支持很多参数其中一个是试试看的基本命令与常规的命令相比这会返回更多的信息你可以看到从左至右文件权限如果你的系统支持这里也会有一个标识链接到该文件的数量该文件的所有者该文件的用户组文件大小单位为字节文件最后的修改日期文件名这串数据是由参数产生的而参数则用来包含被隐藏的文件隐藏文件的文件名通常以英文句号开头其他的一系列参数显示指定目录下所有子目录与文件包括隐藏文件以列表方式显示文件的详细信息配合以人性化的方式显示文件大小注意以开头的文件为隐藏文件需要用参数才能显示中的命令假如有一个文件夹那么你可以用命令来打开它是改变目录的缩写同样你可以在后面加上文件夹的名字或完整的路径来访问某个特定的文件夹示例现在你进入了文件夹你可以使用这个特殊的路径来代指上级目录回到上级目录在这里井号表示注释的开始在它之后的整行内容都是注释也可以用来组成路径另一个特殊路径是它指代的是当前所在的文件夹你也可以使用绝对路径也就是从根文件夹开始的位置中的命令如果你在文件系统里迷路了输入它会显示你现在的位置这条命令输出当前所在文件夹的路径中的命令使用命令创建新的文件夹这条命令还可以一次创建多个文件夹你也可以添加参数创建多个嵌套的文件夹命令的参数通常都是这样的形式只需要在命令的名字之后加上它们就可以改变命令的工作方式你可以同时使用多个参数你可以通过页面查找某个命令支持的具体参数只需要输入命令名现在你可以试试输入来查看这一命令的参数按下字母以退出页面页面是上非常棒的内置帮助系统中的命令如上所述命令可以创建文件夹与之相反命令用来删除文件夹这个命令也可以一次删除多个文件夹用这个命令删除的文件夹必须是空的如果要删除含有内容的文件夹这里有一个更通用的命令配合参数即可同时删除文件夹和其中的文件请小心操作这个命令在执行时不会向你确认而是立刻删除你指定的文件用命令行删除文件是没有回收站存在的恢复丢失的文件会很难中的命令当你有一个文件时你可以用命令移动它只需要指定文件的当前路径和新路径文件现在被移动到了这也是为文件和目录进行重命名的方法如果你指定的最后路径是一个文件夹那么前面路径中的文件将被移动到那个文件夹这时你可以列出一组要移动的文件这些文件将被移动到最后一个参数中指定的路径文件和被移动到文件夹中的命令命令可以用来复制文件要复制整个文件夹可以添加参数来递归复制那个文件夹的内容中的命令命令可以让你打开任意一个文件格式如下命令名使用下面的命令打开当前目录特殊符号代指当前目录而代指上级目录此外它还可以用来打开一个应用程序应用程序名中的命令命令可以用来创建空白的文件如果指定的文件已经存在那么它将以写入模式打开文件文件的时间戳修改日期也同时更新中的命令命令可以用来按特定的模式搜索文件和文件夹它以递归的方式进行搜索让我们通过几个例子来学习它的用法你可以用下面的命令查找当前目录树下所有扩展名为的文件并输出每个匹配文件的相对路径在星号等特殊字符周围打上引号是很重要的这可以避免弄错它们的意义如果要查找在当前目录树下所有与这一名称匹配的目录请输入同理如果只搜索文件可以使用参数如果只搜索符号链接可以使用参数中的命令命令是诸多文件系统命令的一部分它的用途是创建链接链接是什么链接就像是指针指向另一个文件或者说是指向另一个文件的文件你可能熟悉上的快捷方式二者是类似的我们有两种类型的链接硬链接和软链接硬链接硬链接现在很少使用它有一些弱点你无法链接到目录也无法链接到外部文件系统磁盘驱动器要创建一个硬链接可以使用下面的语法源文件路径链接路径例如你有一个叫做的文件你可以用下面的写法创建一个硬链接这个新创建的硬链接和普通的文件没有什么区别现在如果你编辑这对文件中的任何一个另一个文件的内容也会随之更新即使你删除了源文件链接文件仍然会包含源文件的内容那是因为直到创建硬链接时源文件还没有被删除软链接软链接则有所不同它更为强大一些你可以用它链接到其他的文件系统和目录但请注意当你删除源文件时这个链接会断掉你可以使用命令的参数创建一个软链接源文件路径链接路径例如你有一个叫做的文件你可以用下面的写法为它创建一个软链接这种情况下当你用列出文件时你可以看见一个特殊的标记在文件名的末尾有一个符号如果你启用了终端的显色文件名还会有不同的颜色现在如果你删除源文件链接就会断掉如果你在终端里尝试访问它会提示没有这个文件或目录中的命令你可以使用命令从而使用一种称为的压缩协议来压缩文件以下是最简单的用法文件名这会压缩指定的文件并为它加上扩展名源文件会被删除如果不想删除源文件你可以加上参数然后使用输出重定向将输出文件写到中参数用来指定输出文件进入标准输出流同时保持原始文件的完整性或者使用参数文件名文件有不同的压缩率压缩率越高压缩或者解压的时间就越长压缩率等级一般从速度最快压缩效果最差开始直到速度最慢压缩效果更好结束默认为你可以用数字参数指定使用的压缩率文件名你可以压缩多个文件只需要依次列出它们你可以用递归的方式压缩某个目录包含的全部文件只需要使用参数文件夹路径参数会输出文件压缩时的百分比信息以下是它和的简写参数并用时的情形命令也可以用来解压文件只需使用参数中的命令命令与命令基本等同但前者总是默认启用后者的参数可以用下面的方式调用这个命令这会执行解压将压缩文件的扩展名去除并将结果放进文件中如果相应文件已经存在将会被提取结果覆盖你可以加上参数使用输出重定向将压缩文件解压到不同的文件名另一个文件名中的命令命令可以用来创建档案包将多个文件打包为一个文件它的名称来源于旧时意思是磁带档案很久以前档案都是用磁带存储的下面的命令会将和打包成一个名为的档案包文件参数是创建的简写参数则用来将合成的档案包写入一个文件要在当前文件夹下的某个档案包中提取文件可以使用如下命令参数是提取的简写如果要提取文件到指定目录应该使用下面的命令目录路径你也可以不提取文件只罗列某个档案包里含有的文件列表常用来创建压缩档案包这可以用参数来完成这就像是先创建了一个档案包再运行来压缩它如果你要提取一个被压缩的档案包可以先使用或来解压再提取里面的文件除此之外也可以直接识别压缩的档案包然后为你完成解压提取操作中的命令命令与后面会介绍到的命令有些相似但命令可以向任一文件添加内容这就使得它非常强大最简单的用法是将任一文件的内容打印到标准输出中文件名你可以打印输出多个文件的内容配合输出重定向操作符你可以把多个文件的内容拼接成一个新的文件使用操作符你可以将多个文件的内容附加到任一文件中如果目标文件不存在则会新建一个当查看源代码时读取行数是非常有用的使用的参数即可完成使用参数可以同时也只能向文件的非空行添加一个数字而使用参数则可以移除文件中所有的多行空行经常和管道符一并使用可以将任一文件的内容输入给另一个命令使用文件名另一个命令中的命令透过一个漂亮的交互用户界面向你展示任一文件中存储的内容用法文件名当你处于会话时按下键即可离开你可以使用上键和下键浏览文件的内容或者使用空格键和键逐页浏览按下键大写可以跳转到文件的末尾而按下键小写则可以回到文件的开头按下左斜杠键并输入文字就可以在文件中进行搜索这会向前搜索如果要向后搜索你需要使用问号并输入文字这个命令只是将文件的内容可视化你可以直接按打开一个编辑器它将使用系统编辑器在大多数情况下是按键即可进入跟踪模式也称观察模式当文件被别人修改时比如从另一个程序中修改你就可以实时看到修改的内容默认状态下不会出现这种情况你只能看到你打开文件时的文件版本你需要按来退出这个模式在这种情况下行为类似于运行文件名命令你可以打开多个文件并使用转到下一个文件和转到上一个文件浏览它们中的命令在我看来命令的最佳用法是带上参数一起调用它会打开并显示文件最末尾的内容并实时监控文件的改动有新内容进入文件时它就将其输出到终端窗口中这对于查看日志文件是非常棒的例如要退出就按下使用以下命令你可以输出任一文件的最后十行内容文件名你还可以在行号前添加加号指定从文件的某一行开始输出之后的所有内容文件名还可以做更多的事情像往常一样我建议你去查询了解更多中的命令命令会为我们显示关于指定文件或透过管道符接收的参数的有用信息以下是透过管道符的例子我们可以利用它来给命令的运行输出计数第一列返回的是行数第二列是字数第三列则是比特数我们可以让它只计算行数或者只计算字数或者只计算比特数在字符集中比特数等于字符数但对于非字符集由于一些字符可能占用多个比特字符的数目可能会不同这在里有发生过这种情况下使用参数可以得到正确的数目中的命令命令是一个非常有用的工具假若掌握了它对日常的编码工作会有很大的帮助如果你比较好奇的全写是全局正则表达式打印你可以使用在文件中进行搜索或者与管道符配合使用将输出结果传递到其他命令例如可以用以下命令在文件里搜寻这一行出现的次数使用参数可以显示行号一个非常有用的方法是告诉在相应行的前后各输出行以提供更多的上下文这可以用参数来完成它可以受取其后的若干行数搜索默认是区分大小写的使用参数可以使其不再区分如上所述你可以使用来过滤其他命令的输出我们可以使用以下方法重现前述的功能搜索字符串中可以使用正则表达式这让变得非常强大另一个你可能发现很有用的方法是使用参数反转结果排除与特定字符串匹配的行中的命令假定你有一份文本文件里面包含一些狗狗的名字这串名字并没有进行排序而命令会帮你按照名称顺序排列它们使用参数倒转排序结果默认情况下排序区分大小写并且遵循英文字母顺序使用参数进行不区分大小写的排序使用参数可按数值大小顺序进行排序如果文件包含重复的行你可以使用参数移除它们命令不像多数命令那样只是用于操作文件它还可以与管道符配合使用因此你可以将它用在其他命令的输出上例如你可以用它排序命令传回的文件列表的功能非常强大它还支持更多的参数你可以输入来探索中的命令是一个非常方便的命令假定有两个文件它们包含几乎相同的信息你没有办法找出区别会处理文件然后告诉你有差异的地方假定有两个文件和它们的区别是比前者多了一条狗狗的名字会告诉你后者多了一行在第行有这一行如果你改变两个文件的顺序它会告诉你后者的第三行丢失了也就是那一行使用参数会逐行对比两个文件你可能更熟悉参数因为在版本管理系统中它一样是用来显示不同版本文件差异的对于目录比较的方式是一样的你必须使用选项来进行递归比较进入子目录如果你只对哪个文件存在差异感兴趣而非关注文件的内容可以使用和参数它还支持更多参数你可以用页面来探索只需键入中的命令命令会做一件简单的事情它将传递给自身的参数打印输出以下示例会将输出到终端我们可以将输出追加到文件中我们可以对环境变量进行插值注意特殊字符需要用反斜杠进行转义以为例这只是个开始当与功能交互时我们可以用它来做一些很棒的事情我们可以输出当前文件夹中的文件我们还可以输出当前文件夹中所有以字母开头的文件任何有效的或者是你使用的其他命令和功能可以在此使用你可以输出你的主文件夹的路径你还可以执行命令并且将执行结果打印到标准输出或者是文件正如你看到的注意输出在默认情况下不保留空白如需留白必须用双引号来包裹命令你可以用它生成字符串列表例如指定一个范围中的命令在或操作系统或是任一系统中每个文件或目录都有所有者所有者可以对文件做任何事情它可以决定文件的命运使用命令所有者以及用户也可以将文件所有权转移给另一个用户所有者文件像这样例如假设有一个为所拥有的文件作为其他用户你无法对它进行写入你可以使用将文件所有权转移到你一种需求十分常见改变目录的所有权同时遍历修改其中包含的文件子目录以及子目录中的文件的所有权你可以使用参数来完成所有者文件文件和目录不仅属于所有者同时还属于用户组使用以下命令你可以在变更所有者的同时更改其所属用户组所有者用户组文件举例你还可以使用命令只更改文件的所属用户组用户组文件名中的命令在或操作系统或是任一系统中每个文件都有三种权限读取写入和执行进入一个文件夹并运行命令你在文件列表每一行见到的像是这样的奇怪字符串定义了文件或文件夹的权限让我们来剖析一下第一个字母表示文件的类型表示这是一个常规的文件表示这是一个目录表示这是一个链接之后你就有了三组值第一组代表文件所有者拥有的权限第二组代表文件所关联的用户组成员拥有的权限第三组代表其他人拥有的权限这些组由三个值组成代表特定角色拥有读取写入和执行访问权限任何被移除的权限会被替换为因此你可以将不同的值及其代表的相关权限进行组合例如等等你可以使用命令来改变一个文件的权限有两种用法其一是使用符号参数其二是使用数字参数首先来试试更为直观的符号参数终端输入空格之后加上一个字母表示即全体表示即用户表示即用户组表示即其他人然后输入或并加上一个或多个权限符号来添加或删除任意权限键入以上所有命令和参数之后都要加上文件或文件夹名称以下是一些例子每个人都可以读取每个人都可以读取和写入其他人非文件所有者也不在文件所属用户组中的用户无法读取写入或执行文件只需要在前添加多个字母即可将相同的权限批量应用到不同的身份其他人和用户组无法读取文件如果你正在编辑一个文件夹你可以使用递归参数将权限应用到该文件夹中的每个文件使用数字参数速度更快但我认为当你不是每天都使用的话是很难记住它们的数字在此代表任一角色的权限这个数字值最大可以是它是这样计算的拥有执行权限记为拥有写入权限记为拥有读取权限记为这又给我们带来四种组合代表无权限代表可以执行代表可以写入代表可以写入和执行代表可以读取代表可以读取和执行代表可以读取和写入代表可以读取执行和写入我们使用三组数字来同时设置所有个用户身份的全部权限中的命令创建一个文件时不需要事先决定权限权限有默认值这些默认值可以使用命令来控制和修改不带参数输入它会显示当前的值本例中为是什么意思这是一个代表权限的八进制数值另一个常见的数值是使用查看更具可读性的注释在这里用户也就是文件的所有者拥有对文件的读取写入和执行的权限和所有者位于同一用户组的用户拥有对文件的读取和执行权限除此之外的其他用户也一样在数字符号中我们通常会改变最后位数字以下列表给出了这些数字的含义代表读取写入与执行代表读取与写入代表读取与执行代表只读代表写入与执行代表仅写入代表仅执行代表没有权限注意这里的数字含义与前述命令中用到的并不同可以用数值格式为权限掩码设置一个新的值也可以更改特定角色的权限中的命令命令会计算整个目录的大小这里的是一个单位为字节的值运行会单独计算每个文件的大小你也可以执行或以兆字节或千兆字节为单位显示文件大小使用选项会显示更为可读的适应大小的数值添加选项同样会输出文件夹中每一个文件的大小一个方便的做法是按大小对目录进行排序然后通过管道输出到从而仅获取前个结果中的命令命令用来获取磁盘的使用情况信息它的基础形式会输出当前挂载的磁盘卷信息使用参数会将值以更为可读的方式显示你也可以指定任一文件或目录名以获取其所在的特定卷的信息中的命令假设有一个文件路径比如执行会返回字符串如果你在任一指向目录的路径字符串上执行你会得到路径的最后一节在以下例子中是一个目录中的命令假设有一个文件路径比如执行会返回字符串中的命令电脑每时每刻都在运行大量不同的进程你可以用命令检查它们这是当前会话中运行的由用户发起的进程列表此处我打开了一些实例大多数是在编辑器内部启动的还运行了一个实例用来生成网站的开发预览这些只是分配给当前用户的命令要列出所有进程我们需要给传递一些参数我最常使用的命令是参数用来同时列出其他用户的进程显示那些未与终端相连的进程不是由用户通过终端发起的如你所见较长的命令被截断了使用继续在新的行上列出命令而非截断我们需要输入两次来应用这个设置这不是笔误你可以配合使用和管道符来搜索特定的进程比如像这样返回的列表达了一些重要信息第一个信息是也就是进程当你想在另一个命令中引用这个进程时比如说要杀死它这是关键的然后是它告诉我们进程所使用的终端接下来告诉我们进程的状态代表闲置的进程睡眠时间超过约秒代表可运行的进程代表睡眠时间少于秒的进程代表已停止的进程代表处于不间断等待中的进程代表已死亡的进程即僵尸进程如果出现一个以上的字母那么第二个字母代表进一步的可能非常有技术性的信息常见的是它代表相应进程在终端中处于前台而代表相应进程是一个会话领头进程则告诉我们进程已经运行了多长时间中的命令命令用来显示系统中正在运行的进程的动态实时信息如果要了解系统发生了什么这条命令真的很方便它的用法很简单你只需要输入终端会完全沉浸到新的视图中这个进程是持续运行的要退出你可以输入字母或按下它给出了很多信息进程数量有多少进程在运行或休眠系统负载使用率还有更多信息在下方占用和内存资源最多的进程列表不断刷新默认情况下进程按使用率排列正如你在高亮标记的列中看到的那样你可以添加一个参数要求进程列表按内存利用率排列中的命令进程可以接收信号并做出反应这是我们与运行中进程打交道的一种方式程序可以向任一程序发送多种信号虽然这个命令的名字暗示了它的主要功能但它不只是用来终止程序的它的用法是默认情况下它会向指定的进程发送信号我们可以使用参数来发送其它信号包括以下这些代表挂起如果在终止进程之前先关闭了启动它的终端窗口这一信号将被自动发送代表干扰这个信号和在终端中按下组合键的作用一样常常用来终结进程信号并不直接发送给进程而是发送到操作系统内核内核会让指定进程立刻停止并终结代表终结这是本命令的默认信号进程收到它会自主终结代表继续它可以用来恢复一个被停止的进程信号并不直接发送给进程而是发送到操作系统内核内核会让指定进程立刻停止但不终结有时你也会见到用数字表示状态的情况例如在这种情况下对应对应对应对应对应对应中的命令与命令类似也向进程发送状态信号但区别是后者可以同时向多个进程发送信号而非前者只能向单个进程发送信号这是它的命令语法也就是进程的名字例如假设有多个程序的实例在运行命令将完全终结它们你可以指定某一个信号就像使用命令那样请向上翻阅命令的指南以了解更多具体可以发送的信号例如中的命令当我们在中运行命令时我们可以在末尾加入符号使其在后台运行例如让命令在后台运行这对于需要长时间运行的程序来说很方便要返回切入后台的程序可以使用命令如果后台只有一个作业进程那么直接使用就好否则要在后面加上作业进程的号码如以此类推要获取作业进程号我们可以使用命令假设我们运行了之后再运行因而我们有两个实例在运行此时命令会这样告诉我们现在我们可以利用作业号切回任意一个实例要再次终止程序可以按下运行也会列出每一个作业的进程中的命令当命令执行时你可以按下暂停它按下后命令会即刻停止并将你带回到终端你可以恢复命令在后台的执行这样既可以使命令保持运行同时又不会妨碍你在终端中做其他工作在这一例子中有个命令停止了运行即可在后台恢复作业的执行我也可以不带任何参数执行命令它会默认选取作业列表中的项中的命令当命令在后台运行时由于此前你已经在命令末尾加上了例如或是使用了命令将命令放到后台此时你可以用命令将其切换回前台执行它将在前台恢复最后被暂停的作业你也可以加上作业号即可指定任一你想在前台恢复的作业作业号可以使用命令获得执行将恢复作业中的命令命令可分为以下四种类型可执行程序内置程序功能命令别名如果你很想知道或只是很好奇命令可以帮你分清这些它会告诉你某一命令如何被解析其中一个有趣的现象是对于别名它会告诉你某个别名将被解析到何处例如在和中显示为一个别名而在中由于是默认提供的所以它会告诉你这是内置的功能中的命令假定你有一个可直接执行的命令因为它处在路径中但你想知道它的具体位置你可以用来做这件事这个命令会返回指定命令的路径只对存储在磁盘上的可执行文件起作用对别名或内置功能无效中的命令有时你必须在远程机器上运行一个长时间活跃的进程但之后你需要断开连接或者你只是想防止当本地和服务器之间有任何网络问题时命令被停止执行要让任一命令在登出或关闭服务器会话后继续运行可以使用命令执行命令可以让某个进程在你登出后继续工作',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-01-31 20:18:19',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://npm.elemecdn.com/anzhiyu-blog-static@1.0.4/img/avatar.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Satoru's Blog</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="中控台" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">兴趣点</div><span class="author-content-item-title">寻找你感兴趣的领域</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Basic-Tool-Using/" style="font-size: 1.05rem;">Basic Tool Using<sup>1</sup></a><a href="/tags/C/" style="font-size: 1.05rem;">C<sup>1</sup></a><a href="/tags/Node/" style="font-size: 1.05rem;">Node<sup>1</sup></a><a href="/tags/Web/" style="font-size: 1.05rem;">Web<sup>1</sup></a><a href="/tags/%E7%BD%91%E5%AE%89/" style="font-size: 1.05rem;">网安<sup>2</sup></a><a href="/tags/%E8%AE%B2%E5%BA%A7learning/" style="font-size: 1.05rem;">讲座learning<sup>1</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">February 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">6</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/01/"><span class="card-archive-list-date">January 2024</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">October 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/09/"><span class="card-archive-list-date">September 2023</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">4</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">原创</a><span class="article-meta tags"></span></div></div><h1 class="post-title" itemprop="name headline">No title</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2024-02-01T09:21:18.088Z" title="Created 2024-02-01 17:21:18">2024-02-01</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2024-01-31T12:18:19.052Z" title="Updated 2024-01-31 20:18:19">2024-01-31</time></span></div><div class="meta-secondline"><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为长沙"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>长沙</span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src=""></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"><header><h1 id="CrawlerTitle" itemprop="name headline">No title</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">Satoru</span><time itemprop="dateCreated datePublished" datetime="2024-02-01T09:21:18.088Z" title="Created 2024-02-01 17:21:18">2024-02-01</time><time itemprop="dateCreated datePublished" datetime="2024-01-31T12:18:19.052Z" title="Updated 2024-01-31 20:18:19">2024-01-31</time></header><h2 id="Linux-和-Shell-简介"><a href="#Linux-和-Shell-简介" class="headerlink" title="Linux 和 Shell 简介"></a>Linux 和 Shell 简介</h2><p>Linux 是一种操作系统， 就像 macOS 和 Windows 一样。</p>
+<p>它<strong>驱动了绝大多数的互联网服务器，是构建任何设施的“地基”，但还不仅如此。 Android 操作系统（中文也称“安卓”）实际上是基于（一种修改版的）Linux 构建的</strong></p>
+<p>Linux 可以让你拥有用计算机做任何事情的自由。这是微软、苹果、谷歌这样的大公司永远不会向用户提供的。</p>
+<h3 id="什么是-Linux-的-Shell？"><a href="#什么是-Linux-的-Shell？" class="headerlink" title="什么是 Linux 的 Shell？"></a>什么是 Linux 的 Shell？</h3><p>hell 通常指的是命令行界面的解析器，简单来说，它给用户提供一个操作界面，来访问底层的操作系统内核进行工作。</p>
+<p><strong>它可以让你使用文本和命令执行操作，同时还提供诸如创建脚本之类的高级功能。</strong></p>
+<p>这很重要：Shell 为用户提供了一种比 GUI （图形用户界面）更为高效的方式来做事。命令行工具可以提供更多不同的参数设置，但用起来不会变得太复杂。</p>
+<p>Shell 有很多种，这里主要介绍 <strong>Unix shell</strong>，通常在 Linux 和 macOS 电脑上都可以见到。</p>
+<p>经过长年发展，很多人为这些系统开发了不同种类的 Shell。其中有一些是最主要的，比如 <strong>Bash</strong>、Csh、Zsh、Fish 等，当然还有更多。</p>
+<p>所有的 Shell 都从 Bourne Shell 发展而来，我们把它叫做 <code>sh</code>。名字中的“Bourne”是取自它的创建人——史蒂夫 · 伯恩（Steve Bourne）。</p>
+<p>如果你在使用 Mac，可以试试打开终端，默认的 Shell 一般是 ZSH（在 Catalina 版本之前，默认是 Bash）。</p>
+<p>你可以在你的系统上配置和运行各种 Shell，譬如我使用的是 Fish shell。</p>
+<p><strong>每一种 Shell 都有其独特的功能和高级的用法，但在大多数的操作上是相通的：它们可以让你执行程序，你也可以对它们进行编程。</strong></p>
+<p>在本手册的余下部分，我们将详细探究那些人们最常用到的命令。</p>
+<h2 id="Linux-中的-man-命令（man！）"><a href="#Linux-中的-man-命令（man！）" class="headerlink" title="Linux 中的 man 命令（man！）"></a>Linux 中的 <code>man</code> 命令（man！）</h2><p>每当我不记得某条命令的用法时，我会输入 <code>man &lt;命令名&gt;</code> 获取它的说明：</p>
+<p>如果我需要快速了解某个命令的用法，我会访问一个叫做 <strong>tldr pages</strong> 的网站（<a target="_blank" rel="noopener" href="https://tldr.sh/">https://tldr.sh</a>）。 它也可以作为一条命令安装在你的电脑上。比如，你可以运行 <code>tldr &lt;命令名&gt;</code> ，它就会快速提供这条命令的概述，(需要注意的是，这<strong>条命令并不是 <code>man</code> 的替代品，而只是一个帮助你摆脱迷失在 <code>man</code> 页面上大量信息里的便利工具。</strong>之后你还是可以在 <code>man</code> 页面查阅某个命令可用的不同选项和详细参数)以及一些常见的使用场景和用法指引：</p>
+<p>![屏幕截图 2024-01-31 192724](&#x2F;..&#x2F;Linux的基本命令&#x2F;屏幕截图 2024-01-31 192724.png)</p>
+<p>这是一个 man （取自 <em>manual</em> 的缩写）页面。Man 页面是你学习开发时的必备工具。它通常包含非常多的信息（有时几乎可以说太多了！）。</p>
+<h2 id="Linux-中的-ls-命令"><a href="#Linux-中的-ls-命令" class="headerlink" title="Linux 中的 ls 命令"></a>Linux 中的 <code>ls</code> 命令</h2><p>在文件夹内，你可以使用 <code>ls</code> 命令列出其中包含的全部文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
+
+<p>如果你在<strong>后面加上别的文件夹名字或者路径，它就会列出那个文件夹的内容：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> /bin</span><br></pre></td></tr></table></figure>
+
+
+
+<p>![屏幕截图 2024-01-31 192724](&#x2F;..&#x2F;Linux的基本命令&#x2F;屏幕截图 2024-01-31 192724.png)</p>
+<p><code>ls</code> 支持很多参数。其中一个是 <code>-al</code> 。试试看：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -al /bin</span><br></pre></td></tr></table></figure>
+
+
+
+<p>![Screenshot-2019-02-09-at-18.49.52 (1)](&#x2F;..&#x2F;Linux的基本命令&#x2F;Screenshot-2019-02-09-at-18.49.52 (1).png)</p>
+<p>与常规的 <code>ls</code> 命令相比，这会返回更多的信息。</p>
+<p>你可以看到（从左至右）：</p>
+<ul>
+<li><strong>文件权限</strong>（如果你的系统支持 ACL，这里也会有一个 ACL 标识）</li>
+<li><strong>链接到该文件的数量</strong></li>
+<li><strong>该文件的所有者</strong></li>
+<li>该文件的<strong>用户组</strong></li>
+<li><strong>文件大小</strong>（单位为字节）</li>
+<li>文件<strong>最后的修改日期</strong></li>
+<li>文件名</li>
+</ul>
+<p>这串数据是由 <code>l</code> 参数产生的，而 <code>a</code> 参数则用来包含被隐藏的文件。</p>
+<p>隐藏文件的文件名通常以英文句号（ <code>.</code> ）开头。</p>
+<p>其他的一系列参数</p>
+<table>
+<thead>
+<tr>
+<th>-a</th>
+<th>显示指定目录下所有子目录与文件，包括隐藏文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-l</td>
+<td>以列表方式显示文件的详细信息</td>
+</tr>
+<tr>
+<td>-h</td>
+<td>配合 -l 以人性化的方式显示文件大小</td>
+</tr>
+</tbody></table>
+<p>注意：以 <code>.</code> 开头的文件为隐藏文件，需要用 -a 参数才能显示</p>
+<h2 id="Linux-中的-cd-命令"><a href="#Linux-中的-cd-命令" class="headerlink" title="Linux 中的 cd 命令"></a>Linux 中的 <code>cd</code> 命令</h2><p>假如有一个文件夹，那么你可以用 <code>cd</code> 命令来打开它。 <code>cd</code> 是 <strong>c</strong>hange <strong>d</strong>irectory（改变目录）的缩写。同样，你可以在后面加上文件夹的名字，或完整的路径，来访问某个特定的文件夹。</p>
+<p>示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits</span><br><span class="line"><span class="built_in">cd</span> fruits</span><br></pre></td></tr></table></figure>
+
+<p>现在你进入了 <code>fruits</code> 文件夹。</p>
+<p>你可以使用 <code>..</code> 这个特殊的路径来代指上级目录。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> .. <span class="comment">#回到上级目录</span></span><br></pre></td></tr></table></figure>
+
+<p>在这里，井号（#）表示注释的开始，在它之后的整行内容都是注释。</p>
+<p><code>..</code> 也可以用来组成路径</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits</span><br><span class="line"><span class="built_in">mkdir</span> cars</span><br><span class="line"><span class="built_in">cd</span> fruits</span><br><span class="line"><span class="built_in">cd</span> ../cars</span><br></pre></td></tr></table></figure>
+
+<p>另一个特殊路径是 <code>.</code>，它指代的是<strong>当前</strong>所在的文件夹。</p>
+<p>你也可以使用绝对路径，也就是从根文件夹 <code>/</code> 开始的位置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /etc</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-pwd-命令"><a href="#Linux-中的-pwd-命令" class="headerlink" title="Linux 中的 pwd 命令"></a>Linux 中的 <code>pwd</code> 命令</h2><p>如果你在文件系统里迷路了，输入 <code>pwd</code> ，它会显示你现在的位置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">pwd</span></span><br></pre></td></tr></table></figure>
+
+<p>这条命令输出当前所在文件夹的路径。</p>
+<h2 id="Linux-中的-mkdir-命令"><a href="#Linux-中的-mkdir-命令" class="headerlink" title="Linux 中的 mkdir 命令"></a>Linux 中的 <code>mkdir</code> 命令</h2><p>使用 <code>mkdir</code> 命令创建新的文件夹</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits</span><br></pre></td></tr></table></figure>
+
+<p>这条命令还可以一次创建多个文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> dogs cars</span><br></pre></td></tr></table></figure>
+
+<p>你也可以添加 <code>-p</code> 参数，创建多个嵌套的文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p fruits/apples</span><br></pre></td></tr></table></figure>
+
+<p>UNIX 命令的参数通常都是这样的形式，只需要在命令的名字之后加上它们，就可以改变命令的工作方式。你可以同时使用多个参数。</p>
+<p>你可以通过 Man 页面查找某个命令支持的具体参数，只需要输入 <code>man &lt;命令名&gt;</code>。现在，你可以试试输入 <code>man mkdir</code>，来查看这一命令的参数（按下字母<code>q</code>以退出 Man 页面）。 Man 页面是 UNIX 上非常棒的内置帮助系统。</p>
+<h2 id="Linux-中的-rmdir-命令"><a href="#Linux-中的-rmdir-命令" class="headerlink" title="Linux 中的 rmdir 命令"></a>Linux 中的 <code>rmdir</code> 命令</h2><p>如上所述，<code>mkdir</code> 命令可以创建文件夹，与之相反，<code>rmdir</code> 命令用来删除文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits</span><br><span class="line"><span class="built_in">rmdir</span> fruits</span><br></pre></td></tr></table></figure>
+
+<p>这个命令也可以一次删除多个文件夹：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits cars</span><br><span class="line"><span class="built_in">rmdir</span> fruits cars</span><br></pre></td></tr></table></figure>
+
+<p>用这个命令删除的文件夹，必须是空的。</p>
+<p>如果要删除含有内容的文件夹，<strong>这里有一个更通用的命令：<code>rm</code> ，配合 <code>-rf</code> 参数即可同时删除文件夹和其中的文件</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> -rf fruits cars</span><br></pre></td></tr></table></figure>
+
+<p>请小心操作，<strong>这个命令在执行时不会向你确认，而是立刻删除你指定的文件。</strong></p>
+<p>用命令行删除文件，是没有<strong>回收站</strong>存在的，恢复丢失的文件会很难。</p>
+<h2 id="Linux-中的-mv-命令"><a href="#Linux-中的-mv-命令" class="headerlink" title="Linux 中的 mv 命令"></a>Linux 中的 <code>mv</code> 命令</h2><p>当你有一个文件时，你可以用 <code>mv</code> 命令移动它。只需要指定文件的当前路径和新路径：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> <span class="built_in">test</span></span><br><span class="line"><span class="built_in">mv</span> pear new_pear</span><br></pre></td></tr></table></figure>
+
+<p>文件 <code>pear</code> 现在被移动到 <code>new_pear</code> 了。这也是为文件和目录进行<strong>重命名</strong>的方法。</p>
+<p>如果你指定的最后路径是一个文件夹，那么前面路径中的文件将被移动到那个文件夹。这时，你可以列出一组要移动的文件，这些文件将被移动到最后一个参数中指定的路径：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> pear</span><br><span class="line"><span class="built_in">touch</span> apple</span><br><span class="line"><span class="built_in">mkdir</span> fruits</span><br><span class="line"><span class="built_in">mv</span> pear apple fruits <span class="comment">#文件 pear 和 apple 被移动到 fruits 文件夹</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-cp-命令"><a href="#Linux-中的-cp-命令" class="headerlink" title="Linux 中的 cp 命令"></a>Linux 中的 <code>cp</code> 命令</h2><p><strong><code>cp</code> 命令可以用来复制文件：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> <span class="built_in">test</span></span><br><span class="line"><span class="built_in">cp</span> apple another_apple</span><br></pre></td></tr></table></figure>
+
+<p><strong>要复制整个文件夹，可以添加 <code>-r</code> 参数来递归复制那个文件夹的内容：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> fruits</span><br><span class="line"><span class="built_in">cp</span> -r fruits cars</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-open-命令"><a href="#Linux-中的-open-命令" class="headerlink" title="Linux 中的 open 命令"></a>Linux 中的 <code>open</code> 命令</h2><p><code>open</code> 命令可以让你<strong>打开任意一个文件，格式如下</strong>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open &lt;命令名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>使用下面的命令打开当前目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open .</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>特殊符号 <code>.</code> 代指当前目录， 而 <code>..</code> 代指上级目录。</p>
+</blockquote>
+<p>此外，它还可以用来打开一个应用程序：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">open &lt;应用程序名&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-touch-命令"><a href="#Linux-中的-touch-命令" class="headerlink" title="Linux 中的 touch 命令"></a>Linux 中的 <code>touch</code> 命令</h2><p><code>touch</code> 命令可以用来创建空白的文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">touch</span> apple</span><br></pre></td></tr></table></figure>
+
+<p>如果指定的文件已经存在，那么它将以写入模式打开文件，文件的<strong>时间戳（修改日期）也同时更新。</strong></p>
+<h2 id="Linux-中的-find-命令"><a href="#Linux-中的-find-命令" class="headerlink" title="Linux 中的 find 命令"></a>Linux 中的 <code>find</code> 命令</h2><p><code>find</code> 命令可以用来按特定的模式搜索文件和文件夹。它以递归的方式进行搜索。</p>
+<p>让我们通过几个例子来学习它的用法。</p>
+<p>你<strong>可以用下面的命令，查找当前目录树下所有扩展名为 <code>.js</code> 的文件，并输出每个匹配文件的相对路径：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name <span class="string">&#x27;*.js&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>在星号（<code>*</code>）等特殊字符周围打上引号是很重要的，<strong>这可以避免 Shell 弄错它们的意义。</strong></p>
+<p>如果要查找在当前目录树下，所有与”src”这一名称匹配的目录，请输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -<span class="built_in">type</span> d -name src</span><br></pre></td></tr></table></figure>
+
+<p>同理，如果<strong>只搜索文件，可以使用 <code>-type f</code> 参数</strong>；</p>
+<p>如果<strong>只搜索符号链接，可以使用 <code>-type l</code> 参数。</strong></p>
+<h2 id="Linux-中的-ln-命令"><a href="#Linux-中的-ln-命令" class="headerlink" title="Linux 中的 ln 命令"></a>Linux 中的 <code>ln</code> 命令</h2><p><code>ln</code> 命令是 Linux 诸多文件系统命令的一部分。</p>
+<p>它的用途是创建链接。“链接”是什么？链接就像是指针，指向另一个文件，或者说是指向另一个文件的文件。你可能熟悉 Windows 上的快捷方式，二者是类似的。</p>
+<p>我们有两种类型的链接：<strong>硬链接</strong>和<strong>软链接</strong>。</p>
+<h4 id="硬链接"><a href="#硬链接" class="headerlink" title="硬链接"></a>硬链接</h4><p>硬链接现在很少使用。它有一些弱点：<strong>你无法链接到目录，也无法链接到外部文件系统（磁盘驱动器）。</strong></p>
+<p>要创建一个硬链接，可以使用下面的语法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> &lt;源文件路径&gt; &lt;链接路径&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如，你有一个叫做 recipes.txt 的文件，你可以用下面的写法创建一个硬链接：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> recipes.txt newrecipes.txt</span><br></pre></td></tr></table></figure>
+
+<p>这个新创建的硬链接和普通的文件没有什么区别：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-11.26.21.png" alt="Screen-Shot-2020-09-02-at-11.26.21"></p>
+<p>现在，如果你编辑这对文件中的任何一个，另一个文件的内容也会随之更新。</p>
+<p><strong>即使你删除了源文件，链接文件仍然会包含源文件的内容。那是因为直到创建硬链接时，源文件还没有被删除。</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-11.26.07.png" alt="Screen-Shot-2020-09-02-at-11.26.07"></p>
+<h4 id="软链接"><a href="#软链接" class="headerlink" title="软链接"></a>软链接</h4><p>软链接则有所不同<strong>，它更为强大一些，你可以用它链接到其他的文件系统和目录。但请注意，当你删除源文件时，这个链接会断掉。</strong></p>
+<p>你可以使用 <code>ln</code> 命令的 <code>-s</code> 参数创建一个软链接：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -s &lt;源文件路径&gt; &lt;链接路径&gt;</span><br></pre></td></tr></table></figure>
+
+<p>例如，你有一个叫做 recipes.txt 的文件。你可以用下面的写法为它创建一个软链接：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ln</span> -s recipes.txt newrecipes.txt</span><br></pre></td></tr></table></figure>
+
+<p>这种情况下，当你用 <code>ls -al</code> 列出文件时，你可以看见一个特殊的 <code>l</code> 标记。在文件名的末尾有一个 <code>@</code> 符号，如果你启用了终端的显色，文件名还会有不同的颜色：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-11.27.18.png" alt="Screen-Shot-2020-09-02-at-11.27.18"></p>
+<p><strong>现在，如果你删除源文件，链接就会断掉，如果你在终端里尝试访问它，Shell 会提示 “No such file or directory” （没有这个文件或目录）：</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-11.27.03.png" alt="Screen-Shot-2020-09-02-at-11.27.03"></p>
+<h2 id="Linux-中的-gzip-命令"><a href="#Linux-中的-gzip-命令" class="headerlink" title="Linux 中的 gzip 命令"></a>Linux 中的 <code>gzip</code> 命令</h2><p>你可以使用 <code>gzip</code> 命令，从而使用一种称为 LZ77的 gzip 压缩协议，来压缩文件。</p>
+<p>以下是最简单的用法：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip 文件名</span><br></pre></td></tr></table></figure>
+
+<p>这会压缩指定的文件，并为它加上 <code>.gz</code> 扩展名。源文件会被删除。</p>
+<p>如果不想删除源文件，你可以加上 <code>-c</code> 参数，然后使用输出重定向，将输出文件写到 <code>filename.gz</code> 中。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -c filename &gt; filename.gz</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>-c</code> 参数用来指定输出文件进入标准输出流，同时保持原始文件的完整性。</p>
+</blockquote>
+<p>或者使用 <code>-k</code> 参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -k 文件名</span><br></pre></td></tr></table></figure>
+
+<p>文件有不同的压缩率。压缩率越高，压缩（或者解压）的时间就越长。压缩率等级一般从 1（速度最快，压缩效果最差）开始，直到 9 （速度最慢，压缩效果更好）结束。默认为 6 。</p>
+<p>你可以用 <code>-&lt;数字&gt;</code> 参数指定使用的压缩率：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -1 文件名</span><br></pre></td></tr></table></figure>
+
+<p>你可以压缩多个文件，只需要依次列出它们：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip file1 file2</span><br></pre></td></tr></table></figure>
+
+<p>你可以用递归的方式压缩某个目录包含的全部文件，只需要使用 <code>-r</code> 参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -r 文件夹路径</span><br></pre></td></tr></table></figure>
+
+<p><code>-v</code> 参数会输出文件压缩时的百分比信息。以下是它和 <code>-k</code> （Keep 的简写） 参数并用时的情形：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-09-at-15.55.42.png" alt="Screen-Shot-2020-09-09-at-15.55.42"></p>
+<p><code>gzip</code> 命令也可以用来解压文件，只需使用 <code>-d</code> 参数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gzip -d filename.gz</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-gunzip-命令"><a href="#Linux-中的-gunzip-命令" class="headerlink" title="Linux 中的 gunzip 命令"></a>Linux 中的 <code>gunzip</code> 命令</h2><p><code>gunzip</code> 命令与 <code>gzip</code> 命令基本等同，但前者总是默认启用后者的 <code>-d</code> 参数。</p>
+<p>可以用下面的方式调用这个命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gunzip filename.gz</span><br></pre></td></tr></table></figure>
+
+<p>这会执行解压，将压缩文件的 <code>.gz</code> 扩展名去除，并将结果放进 <code>filename</code> 文件中。如果相应文件已经存在，将会被提取结果覆盖。</p>
+<p>你可以加上 <code>-c</code> 参数，使用输出重定向，将压缩文件解压到不同的文件名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gunzip -c filename.gz &gt; 另一个文件名</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-tar-命令"><a href="#Linux-中的-tar-命令" class="headerlink" title="Linux 中的 tar 命令"></a>Linux 中的 <code>tar</code> 命令</h2><p><code>tar</code> 命令可以用来创建档案包，将<strong>多个文件打包为一个文件</strong>。</p>
+<p>它的名称来源于旧时，意思是 <em>tape archive（磁带档案）</em> （<strong>很久以前档案都是用磁带存储的</strong>）。</p>
+<p>下面的命令会将 <code>file1</code> 和 <code>file2</code> 打包成一个名为 <code>archive.tar</code> 的档案包文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -cf archive.tar file1 file2</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>c</code> 参数是 <em>create（创建）</em> 的简写。<code>f</code> 参数则用来将合成的档案包写入一个文件。</p>
+</blockquote>
+<p>要在当前文件夹下的某个档案包中提取文件，可以使用如下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xf archive.tar</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>参数 <code>x</code> 是 <em>extract（提取）</em> 的简写。</p>
+</blockquote>
+<p>如果要提取文件到指定目录，应该使用下面的命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xf archive.tar -C 目录路径</span><br></pre></td></tr></table></figure>
+
+<p>你也可以不提取文件，只罗列某个档案包里含有的文件列表：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-09-at-16.56.33.png" alt="Screen-Shot-2020-09-09-at-16.56.33"><br><code>tar</code> 常用来创建<strong>压缩档案包</strong>。</p>
+<p>这可以用 <code>z</code> 参数来完成：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -czf archive.tar.gz file1 file2</span><br></pre></td></tr></table></figure>
+
+<p>这就像是先创建了一个 tar 档案包，再运行 <code>gzip</code> 来压缩它。</p>
+<p>如果你要提取一个被压缩的档案包，可以先使用 <code>gunzip</code> 或 <code>gzip -d</code> 来解压，再提取里面的文件。除此之外 <code>tar -xf</code> 也可以直接识别压缩的档案包，然后为你完成解压提取操作：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -xf archive.tar.gz</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Linux-中的-cat-命令"><a href="#Linux-中的-cat-命令" class="headerlink" title="Linux 中的 cat 命令"></a>Linux 中的 <code>cat</code> 命令</h2><p><code>cat</code> 命令与后面会介绍到的 <a target="_blank" rel="noopener" href="https://www.freecodecamp.org/news/unix-command-tail/"><code>tail</code></a> 命令有些相似，但 <code>cat</code> 命令可以向任一文件添加内容，这就使得它非常强大。</p>
+<p><code>cat</code> 最简单的用法是将任一文件的内容打印到标准输出中：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> 文件名</span><br></pre></td></tr></table></figure>
+
+<p>你可以打印输出多个文件的内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> file1 file2</span><br></pre></td></tr></table></figure>
+
+<p>配合输出重定向操作符 <code>&gt;</code> ，你可以把多个文件的内容拼接成一个新的文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> file1 file2 &gt; file3</span><br></pre></td></tr></table></figure>
+
+<p>使用操作符 <code>&gt;&gt;</code> ，你可以将多个文件的内容附加到任一文件中，如果目标文件不存在，则会新建一个：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> file1 file2 &gt;&gt; file3</span><br></pre></td></tr></table></figure>
+
+<p>当查看源代码时，读取行数是非常有用的。使用 <code>cat</code> 的参数 <code>-n</code> 即可完成：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> -n file1</span><br></pre></td></tr></table></figure>
+
+<p>使用 <code>-b</code> 参数可以（同时也只能）向文件的非空行添加一个数字。而使用 <code>-s</code> 参数则可以移除文件中所有的多行空行。</p>
+<p><code>cat</code> 经常和管道符 <code>|</code> 一并使用，可以将任一文件的内容输入给另一个命令使用： <code>cat 文件名1 | 另一个命令</code>。</p>
+<h2 id="Linux-中的-less-命令"><a href="#Linux-中的-less-命令" class="headerlink" title="Linux 中的 less 命令"></a>Linux 中的 <code>less</code> 命令</h2><p>透过一个漂亮的交互用户界面向你展示任一文件中存储的内容：</p>
+<p>用法： <code>less &lt;文件名&gt;</code>.</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screenshot-2019-02-10-at-09.11.05.png" alt="Screenshot-2019-02-10-at-09.11.05"></p>
+<p>当你处于 <code>less</code> 会话时，按下 <code>q</code> 键即可离开。</p>
+<p>你可以使用 <code>上</code> 键和 <code>下</code> 键浏览文件的内容，或者使用 <code>空格</code> 键和 <code>b</code> 键逐页浏览。按下 <code>G</code> 键（大写）可以跳转到文件的末尾，而按下 <code>g</code> 键（小写）则可以回到文件的开头。</p>
+<p>按下左斜杠键 <code>/</code> 并输入文字，就可以在文件中进行搜索。这会 <em>向前</em> 搜索。如果要向后搜索，你需要使用问号 <code>?</code> 并输入文字。</p>
+<p>这个命令只是将文件的内容可视化。你可以直接按 <code>v</code> 打开一个编辑器。它将使用系统编辑器，在大多数情况下是 <code>vim</code> 。</p>
+<p>按 <code>F</code> 键即可进入 <em>跟踪模式</em>，也称 <em>观察模式</em>。当文件被别人修改时，比如从另一个程序中修改，你就可以 <em>实时</em> 看到修改的内容。</p>
+<p>默认状态下不会出现这种情况，你只能看到你打开文件时的文件版本。你需要按 <code>ctrl-C</code> 来退出这个模式。在这种情况下，行为类似于运行 <code>tail -f &lt;文件名&gt;</code> 命令。</p>
+<p>你可以打开多个文件，并使用 <code>:n</code> （next，转到下一个文件）和 <code>:p</code> （previous，转到上一个文件）浏览它们。</p>
+<h2 id="Linux-中的-tail-命令"><a href="#Linux-中的-tail-命令" class="headerlink" title="Linux 中的 tail 命令"></a>Linux 中的 <code>tail</code> 命令</h2><p>在我看来，tail 命令的最佳用法是带上 <code>-f</code> 参数一起调用。它会打开并显示文件最末尾的内容，并实时监控文件的改动。</p>
+<p>有新内容进入文件时，它就将其输出到终端窗口中。这对于查看日志文件是非常棒的。例如：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">tail</span> -f /var/log/system.log</span><br></pre></td></tr></table></figure>
+
+<p>要退出，就按下 <code>ctrl-C</code>.</p>
+<p>使用以下命令，你可以输出任一文件的最后十行内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">tail</span> -n 10 &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
+
+<p>你还可以在行号前添加加号 <code>+</code> 指定从文件的某一行开始输出之后的所有内容：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">tail</span> -n +10 &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>tail</code> 还可以做更多的事情，像往常一样，我建议你去查询 <code>man tail</code> 了解更多。</p>
+<h2 id="Linux-中的-wc-命令"><a href="#Linux-中的-wc-命令" class="headerlink" title="Linux 中的 wc 命令"></a>Linux 中的 <code>wc</code> 命令</h2><p><code>wc</code> 命令会为我们显示关于指定文件（或透过管道符接收的参数）的有用信息。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="built_in">test</span> &gt;&gt; test.txt</span><br><span class="line"><span class="built_in">wc</span> test.txt</span><br><span class="line">1       1       5 test.txt</span><br></pre></td></tr></table></figure>
+
+<p>以下是透过管道符的例子，我们可以利用它来给 <code>ls -al</code> 命令的运行输出计数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -al | <span class="built_in">wc</span></span><br><span class="line">6      47     284</span><br></pre></td></tr></table></figure>
+
+<p>第一列返回的是行数，第二列是字数，第三列则是比特数。</p>
+<p>我们可以让它只计算行数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">wc</span> -l test.txt</span><br></pre></td></tr></table></figure>
+
+<p>或者只计算字数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">wc</span> -w test.txt</span><br></pre></td></tr></table></figure>
+
+<p>或者只计算比特数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">wc</span> -c test.txt</span><br></pre></td></tr></table></figure>
+
+<p>在 ASCII 字符集中，比特数等于字符数。但对于非 ASCII 字符集，由于一些字符可能占用多个比特，字符的数目可能会不同（这在 Unicode 里有发生过）。</p>
+<p>这种情况下使用 <code>-m</code> 参数可以得到正确的数目：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">wc</span> -m test.txt</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-grep-命令"><a href="#Linux-中的-grep-命令" class="headerlink" title="Linux 中的 grep 命令"></a>Linux 中的 <code>grep</code> 命令</h2><p><code>grep</code> 命令是一个非常有用的工具。假若掌握了它，对日常的编码工作会有很大的帮助。</p>
+<blockquote>
+<p>如果你比较好奇， <code>grep</code> 的全写是 <em>global regular expression print</em> （全局正则表达式打印）。</p>
+</blockquote>
+<p>你可以使用 <code>grep</code> 在文件中进行搜索，或者与管道符配合使用，将输出结果传递到其他命令。</p>
+<p>例如，可以用以下命令在 <code>index.md</code> 文件里搜寻 <code>document.getElementById</code> 这一行出现的次数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -n document.getElementById index.md</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.42.10.png" alt="Screen-Shot-2020-09-04-at-09.42.10"></p>
+<p>使用 <code>-n</code> 参数可以显示行号：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -n document.getElementById index.md</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.47.04.png" alt="Screen-Shot-2020-09-04-at-09.47.04"></p>
+<p>一个非常有用的方法是告诉 grep 在相应行的前后各输出 2 行，以提供更多的上下文。这可以用参数 <code>-C</code> 来完成，它可以受取其后的若干行数：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">grep -nC 2 document.getElementById index.md</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.44.35.png" alt="Screen-Shot-2020-09-04-at-09.44.35"></p>
+<p>搜索默认是区分大小写的。使用参数 <code>-i</code> 可以使其不再区分。</p>
+<p>如上所述，你可以使用 grep 来过滤其他命令的输出。我们可以使用以下方法重现前述的功能：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">less index.md | grep -n document.getElementById</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.43.15.png" alt="Screen-Shot-2020-09-04-at-09.43.15"></p>
+<p>搜索字符串中可以使用正则表达式，这让 <code>grep</code> 变得非常强大。</p>
+<p>另一个你可能发现很有用的方法是——使用参数 <code>-v</code> 反转结果，排除与特定字符串匹配的行：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.42.04.png" alt="Screen-Shot-2020-09-04-at-09.42.04"></p>
+<h2 id="Linux-中的-sort-命令"><a href="#Linux-中的-sort-命令" class="headerlink" title="Linux 中的 sort 命令"></a>Linux 中的 <code>sort</code> 命令</h2><p>假定你有一份文本文件，里面包含一些狗狗的名字：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-07.56.28.png" alt="Screen-Shot-2020-09-07-at-07.56.28"></p>
+<p>这串名字并没有进行排序。</p>
+<p>而 <code>sort</code> 命令会帮你按照名称顺序排列它们：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-07.57.08.png" alt="Screen-Shot-2020-09-07-at-07.57.08"></p>
+<p>使用 <code>r</code> 参数倒转排序结果：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-07.57.28.png" alt="Screen-Shot-2020-09-07-at-07.57.28"></p>
+<p>默认情况下，排序区分大小写，并且遵循英文字母顺序。使用 <code>--ignore-case</code> 参数进行不区分大小写的排序，使用 <code>-n</code> 参数可按数值大小顺序进行排序。</p>
+<p>如果文件包含重复的行：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-07.59.03.png" alt="Screen-Shot-2020-09-07-at-07.59.03"></p>
+<p>你可以使用 <code>-u</code> 参数移除它们：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-07.59.16.png" alt="Screen-Shot-2020-09-07-at-07.59.16"></p>
+<p><code>sort</code> 命令不像多数 UNIX 命令那样，只是用于操作文件，它还可以与管道符配合使用。因此你可以将它用在其他命令的输出上。例如，你可以用它排序 <code>ls</code> 命令传回的文件列表：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> | <span class="built_in">sort</span></span><br></pre></td></tr></table></figure>
+
+<p><code>sort</code> 的功能非常强大，它还支持更多的参数，你可以输入 <code>man sort</code> 来探索：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.01.27.png" alt="Screen-Shot-2020-09-07-at-08.01.27"></p>
+<h2 id="Linux-中的-diff-命令"><a href="#Linux-中的-diff-命令" class="headerlink" title="Linux 中的 diff 命令"></a>Linux 中的 <code>diff</code> 命令</h2><p><code>diff</code> 是一个非常方便的命令。假定有两个文件，它们包含几乎相同的信息，你没有办法找出区别。</p>
+<p><code>diff</code> 会处理文件，然后告诉你有差异的地方。</p>
+<p>假定有两个文件： <code>dogs.txt</code> 和 <code>moredogs.txt</code>。它们的区别是： <code>moredogs.txt</code> 比前者多了一条狗狗的名字：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.55.18.png" alt="Screen-Shot-2020-09-07-at-08.55.18"></p>
+<p><code>diff dogs.txt moredogs.txt</code> 会告诉你后者多了一行，在第 3 行有 <code>Vanille</code> 这一行：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.56.05.png" alt="Screen-Shot-2020-09-07-at-08.56.05"></p>
+<p>如果你改变两个文件的顺序，它会告诉你后者的第三行丢失了，也就是 <code>Vanille</code> 那一行：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.56.10.png" alt="Screen-Shot-2020-09-07-at-08.56.10"></p>
+<p>使用 <code>-y</code> 参数会逐行对比两个文件：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.57.56.png" alt="Screen-Shot-2020-09-07-at-08.57.56"></p>
+<p>你可能更熟悉 <code>-u</code> 参数，因为在 Git 版本管理系统中，它一样是用来显示不同版本文件差异的：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-08.58.23.png" alt="Screen-Shot-2020-09-07-at-08.58.23"></p>
+<p>对于目录，比较的方式是一样的。你必须使用 <code>-r</code> 选项来进行递归比较（进入子目录）：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-09.01.07.png" alt="Screen-Shot-2020-09-07-at-09.01.07"></p>
+<p>如果你只对哪个文件存在差异感兴趣，而非关注文件的内容，可以使用 <code>r</code> 和 <code>q</code> 参数：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-09.01.30.png" alt="Screen-Shot-2020-09-07-at-09.01.30"></p>
+<p>它还支持更多参数，你可以用 man 页面来探索，只需键入 <code>man diff</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-07-at-09.02.32.png" alt="Screen-Shot-2020-09-07-at-09.02.32"></p>
+<h2 id="Linux-中的-echo-命令"><a href="#Linux-中的-echo-命令" class="headerlink" title="Linux 中的 echo 命令"></a>Linux 中的 <code>echo</code> 命令</h2><p><code>echo</code> 命令会做一件简单的事情：它将传递给自身的参数打印输出。</p>
+<p>以下示例：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>会将 <code>hello</code> 输出到终端。</p>
+<p>我们可以将输出追加到文件中：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;hello&quot;</span> &gt;&gt; output.txt</span><br></pre></td></tr></table></figure>
+
+<p>我们可以对环境变量进行插值：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;The path variable is <span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.44.33.png" alt="Screen-Shot-2020-09-03-at-15.44.33"></p>
+<p>注意，特殊字符需要用反斜杠进行转义。以 <code>$</code> 为例：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.51.18.png" alt="Screen-Shot-2020-09-03-at-15.51.18"></p>
+<p>这只是个开始。当与 Shell 功能交互时，我们可以用它来做一些很棒的事情。</p>
+<p>我们可以输出当前文件夹中的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo *</span><br></pre></td></tr></table></figure>
+
+<p>我们还可以输出当前文件夹中所有以字母 <code>o</code> 开头的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo o*</span><br></pre></td></tr></table></figure>
+
+<p>任何有效的 Bash（或者是你使用的其他 Shell）命令和功能可以在此使用。</p>
+<p>你可以输出你的主文件夹（home）的路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo ~</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.46.36.png" alt="Screen-Shot-2020-09-03-at-15.46.36"></p>
+<p>你还可以执行命令，并且将执行结果打印到标准输出（或者是文件，正如你看到的）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $(ls -al)</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.48.55.png" alt="Screen-Shot-2020-09-03-at-15.48.55"></p>
+<p>注意，输出在默认情况下不保留空白。如需留白，必须用双引号来包裹命令：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.49.53.png" alt="Screen-Shot-2020-09-03-at-15.49.53"></p>
+<p>你可以用它生成字符串列表，例如指定一个范围：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &#123;1..5&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-15.47.19.png" alt="Screen-Shot-2020-09-03-at-15.47.19"></p>
+<h2 id="Linux-中的-chown-命令"><a href="#Linux-中的-chown-命令" class="headerlink" title="Linux 中的 chown 命令"></a>Linux 中的 <code>chown</code> 命令</h2><p>在 Linux 或 macOS 操作系统（或是任一 UNIX 系统）中，每个文件或目录都有<strong>所有者</strong>。</p>
+<p>所有者可以对文件做任何事情。它可以决定文件的命运。</p>
+<p>使用 <code>chown</code> 命令，所有者（以及 <code>root</code> 用户）也可以将文件所有权转移给另一个用户：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown &lt;所有者&gt; &lt;文件&gt;</span><br></pre></td></tr></table></figure>
+
+<p>像这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown flavio test.txt</span><br></pre></td></tr></table></figure>
+
+<p>例如，假设有一个为 <code>root</code> 所拥有的文件，作为其他用户，你无法对它进行写入：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-18.40.49.png" alt="Screen-Shot-2020-09-03-at-18.40.49"></p>
+<p>你可以使用 <code>chown</code> 将文件所有权转移到你：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-18.40.58.png" alt="Screen-Shot-2020-09-03-at-18.40.58"><br>一种需求十分常见：改变目录的所有权，同时遍历修改其中包含的文件、子目录以及子目录中的文件的所有权。</p>
+<p>你可以使用 <code>-R</code> 参数来完成：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -R &lt;所有者&gt; &lt;文件&gt;</span><br></pre></td></tr></table></figure>
+
+<p>文件和目录不仅属于所有者，同时还属于<strong>用户组</strong>。使用以下命令，你可以在变更所有者的同时，更改其所属用户组：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown &lt;所有者&gt;:&lt;用户组&gt; &lt;文件&gt;</span><br></pre></td></tr></table></figure>
+
+<p>举例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown flavio:users test.txt</span><br></pre></td></tr></table></figure>
+
+<p>你还可以使用 <code>chgrp</code> 命令，只更改文件的所属用户组：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chgrp &lt;用户组&gt; &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-chmod-命令"><a href="#Linux-中的-chmod-命令" class="headerlink" title="Linux 中的 chmod 命令"></a>Linux 中的 <code>chmod</code> 命令</h2><p>在 Linux 或 macOS 操作系统（或是任一 UNIX 系统）中，每个文件都有三种权限：读取、写入和执行。</p>
+<p>进入一个文件夹，并运行 <code>ls -al</code> 命令。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-18.49.22.png" alt="Screen-Shot-2020-09-03-at-18.49.22"><br>你在文件列表每一行见到的，像是 <code>drwxr-xr-x</code> 这样的奇怪字符串，定义了文件或文件夹的权限。</p>
+<p>让我们来剖析一下。</p>
+<p>第一个字母表示文件的类型：</p>
+<ul>
+<li><code>-</code> 表示这是一个常规的文件</li>
+<li><code>d</code> 表示这是一个目录</li>
+<li><code>l</code> 表示这是一个链接</li>
+</ul>
+<p>之后你就有了三组值：</p>
+<ul>
+<li>第一组代表文件<strong>所有者</strong>拥有的权限</li>
+<li>第二组代表文件所关联的<strong>用户组</strong>成员拥有的权限</li>
+<li>第三组代表<strong>其他人</strong>拥有的权限</li>
+</ul>
+<p>这些组由三个值组成。<code>rwx</code> 代表特定 <em>角色</em> 拥有读取、写入和执行访问权限。任何被移除的权限会被替换为 <code>-</code> ，因此你可以将不同的值，及其代表的相关权限进行组合：例如 <code>rw-</code>、<code>r--</code>、<code>r-x</code> 等等。</p>
+<p>你可以使用 <code>chmod</code> 命令来改变一个文件的权限。</p>
+<p><code>chmod</code> 有两种用法。其一是使用符号参数，其二是使用数字参数。首先来试试更为直观的符号参数。</p>
+<p>终端输入 <code>chmod</code> ，空格，之后加上一个字母：</p>
+<ul>
+<li><code>a</code> 表示 <em>all</em>，即全体</li>
+<li><code>u</code> 表示 <em>user</em>，即用户</li>
+<li><code>g</code> 表示 <em>group</em>，即用户组</li>
+<li><code>o</code> 表示 <em>others</em>，即其他人</li>
+</ul>
+<p>然后输入 <code>+</code> 或 <code>-</code> 并加上一个或多个权限符号（<code>r</code>、<code>w</code>、<code>x</code>），来添加或删除任意权限。</p>
+<p>键入以上所有命令和参数之后，都要加上文件或文件夹名称。</p>
+<p>以下是一些例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod a+r filename #每个人都可以读取</span><br><span class="line">chmod a+rw filename #每个人都可以读取和写入</span><br><span class="line">chmod o-rwx filename #其他人（非文件所有者，也不在文件所属用户组中的用户）无法读取、写入或执行文件</span><br></pre></td></tr></table></figure>
+
+<p>只需要在 <code>+</code>&#x2F;<code>-</code> 前添加多个字母，即可将相同的权限批量应用到不同的身份：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod og-r filename #其他人，和用户组无法读取文件。</span><br></pre></td></tr></table></figure>
+
+<p>如果你正在编辑一个文件夹，你可以使用 <code>-r</code>（递归）参数将权限应用到该文件夹中的每个文件。</p>
+<p>使用数字参数速度更快，但我认为当你不是每天都使用的话，是很难记住它们的。数字在此代表任一角色的权限。这个数字值最大可以是7，它是这样计算的：</p>
+<ul>
+<li>拥有执行权限，记为 <code>1</code></li>
+<li>拥有写入权限，记为 <code>2</code></li>
+<li>拥有读取权限，记为 <code>4</code></li>
+</ul>
+<p>这又给我们带来四种组合：</p>
+<ul>
+<li><code>0</code> 代表无权限</li>
+<li><code>1</code> 代表可以执行</li>
+<li><code>2</code> 代表可以写入</li>
+<li><code>3</code> 代表可以写入和执行</li>
+<li><code>4</code> 代表可以读取</li>
+<li><code>5</code> 代表可以读取和执行</li>
+<li><code>6</code> 代表可以读取和写入</li>
+<li><code>7</code> 代表可以读取、执行和写入</li>
+</ul>
+<p>我们使用三组数字，来同时设置所有 3 个用户身份的全部权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 filename</span><br><span class="line">chmod 755 filename</span><br><span class="line">chmod 644 filename</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-umask-命令"><a href="#Linux-中的-umask-命令" class="headerlink" title="Linux 中的 umask 命令"></a>Linux 中的 <code>umask</code> 命令</h2><p>创建一个文件时，不需要事先决定权限。权限有默认值。</p>
+<p>这些默认值可以使用 <code>umask</code> 命令来控制和修改。</p>
+<p>不带参数输入 <code>umask</code> ，它会显示当前的 umask 值，本例中为 <code>0022</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.04.19.png" alt="Screen-Shot-2020-09-04-at-09.04.19"></p>
+<p><code>0022</code> 是什么意思？ 这是一个代表权限的八进制数值。</p>
+<p>另一个常见的数值是 <code>0002</code>.</p>
+<p>使用 <code>umask -S</code> 查看更具可读性的注释：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-09.08.18.png" alt="Screen-Shot-2020-09-04-at-09.08.18"><br>在这里，用户（<code>u</code>），也就是文件的所有者，拥有对文件的读取、写入和执行的权限。</p>
+<p>和所有者位于同一用户组的用户（<code>g</code>）拥有对文件的读取和执行权限，除此之外的其他用户（<code>o</code>）也一样。</p>
+<p>在数字符号中，我们通常会改变最后3位数字。</p>
+<p>以下列表给出了这些数字的含义：</p>
+<ul>
+<li><code>0</code> 代表读取、写入与执行</li>
+<li><code>1</code> 代表读取与写入</li>
+<li><code>2</code> 代表读取与执行</li>
+<li><code>3</code> 代表只读</li>
+<li><code>4</code> 代表写入与执行</li>
+<li><code>5</code> 代表仅写入</li>
+<li><code>6</code> 代表仅执行</li>
+<li><code>7</code> 代表没有权限</li>
+</ul>
+<p>注意，这里的数字含义与前述 <code>chmod</code> 命令中用到的并不同。</p>
+<p>可以用数值格式，为权限掩码设置一个新的值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umask 002</span><br></pre></td></tr></table></figure>
+
+<p>也可以更改特定角色的权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umask g+r</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-du-命令"><a href="#Linux-中的-du-命令" class="headerlink" title="Linux 中的 du 命令"></a>Linux 中的 <code>du</code> 命令</h2><p><code>du</code> 命令会计算整个目录的大小：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-08.11.30.png" alt="Screen-Shot-2020-09-04-at-08.11.30"></p>
+<p>这里的 <code>32</code> 是一个单位为字节（Byte）的值。</p>
+<p>运行 <code>du *</code> 会单独计算每个文件的大小：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-08.12.35.png" alt="Screen-Shot-2020-09-04-at-08.12.35"></p>
+<p>你也可以执行 <code>du -m</code> 或 <code>du -g</code>，以兆字节（MB）或千兆字节（GB）为单位显示文件大小。</p>
+<p>使用 <code>-h</code> 选项，会显示更为可读的，适应大小的数值：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-08.14.40.png" alt="Screen-Shot-2020-09-04-at-08.14.40"></p>
+<p>添加 <code>-a</code> 选项同样会输出文件夹中每一个文件的大小：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-08.20.12.png" alt="Screen-Shot-2020-09-04-at-08.20.12"></p>
+<p>一个方便的做法是按大小对目录进行排序：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">du -h &lt;directory&gt; | sort -nr</span><br></pre></td></tr></table></figure>
+
+<p>然后通过管道输出到 <code>head</code> ，从而仅获取前 10 个结果：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-04-at-08.22.25.png" alt="Screen-Shot-2020-09-04-at-08.22.25"></p>
+<h2 id="Linux-中的-df-命令"><a href="#Linux-中的-df-命令" class="headerlink" title="Linux 中的 df 命令"></a>Linux 中的 <code>df</code> 命令</h2><p><code>df</code> <strong>命令用来获取磁盘的使用情况信息。</strong></p>
+<p>它的基础形式会输出当前挂载的磁盘卷信息：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-08-at-08.40.39.png" alt="Screen-Shot-2020-09-08-at-08.40.39"></p>
+<p>使用 <code>-h</code> 参数 （<code>df -h</code>）会将值以更为可读的方式显示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-08-at-08.40.50.png" alt="Screen-Shot-2020-09-08-at-08.40.50"></p>
+<p>你也可以指定任一文件或目录名，以获取其所在的特定卷的信息：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-08-at-08.41.27.png" alt="Screen-Shot-2020-09-08-at-08.41.27"></p>
+<h2 id="Linux-中的-basename-命令"><a href="#Linux-中的-basename-命令" class="headerlink" title="Linux 中的 basename 命令"></a>Linux 中的 <code>basename</code> 命令</h2><p>假设有一个文件路径，比如 <code>/Users/flavio/test.txt</code>。</p>
+<p>执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">basename /Users/flavio/test.txt</span><br></pre></td></tr></table></figure>
+
+<p>会返回 <code>text.txt</code> 字符串：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-10-at-08.27.52.png" alt="Screen-Shot-2020-09-10-at-08.27.52"></p>
+<p>如果你在任一指向目录的路径字符串上执行 <code>basename</code> ，你会得到路径的最后一节。在以下例子中，<code>/Users/flavio</code> 是一个目录：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-10-at-08.28.11.png" alt="Screen-Shot-2020-09-10-at-08.28.11"></p>
+<h2 id="Linux-中的-dirname-命令"><a href="#Linux-中的-dirname-命令" class="headerlink" title="Linux 中的 dirname 命令"></a>Linux 中的 <code>dirname</code> 命令</h2><p>假设有一个文件路径，比如 <code>/Users/flavio/test.txt</code>。</p>
+<p>执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dirname /Users/flavio/test.txt</span><br></pre></td></tr></table></figure>
+
+<p>会返回 <code>/Users/flavio</code> 字符串：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-10-at-08.31.08-1.png" alt="Screen-Shot-2020-09-10-at-08.31.08-1"></p>
+<h2 id="Linux-中的-ps-命令"><a href="#Linux-中的-ps-命令" class="headerlink" title="Linux 中的 ps 命令"></a>Linux 中的 <code>ps</code> 命令</h2><p>电脑每时每刻都在运行大量不同的进程。</p>
+<p>你可以用 <code>ps</code> 命令检查它们：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-12.25.08.png" alt="Screen-Shot-2020-09-02-at-12.25.08"></p>
+<p>这是当前会话中运行的，由用户发起的进程列表。</p>
+<p>此处我打开了一些 <code>fish</code> Shell 实例，大多数是在 VS Code 编辑器内部启动的，还运行了一个 Hugo 实例，用来生成网站的开发预览。</p>
+<p>这些只是分配给当前用户的命令。要列出<strong>所有</strong>进程，我们需要给 <code>ps</code> 传递一些参数。</p>
+<p>我最常使用的命令是 <code>ps ax</code>：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-12.26.00.png" alt="Screen-Shot-2020-09-02-at-12.26.00"></p>
+<blockquote>
+<p><code>a</code> 参数用来同时列出其他用户的进程。<code>x</code> 显示那些未与终端相连的进程（不是由用户通过终端发起的）。</p>
+</blockquote>
+<p>如你所见，较长的命令被截断了。使用 <code>ps axww</code> 继续在新的行上列出命令，而非截断。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-12.30.22.png" alt="Screen-Shot-2020-09-02-at-12.30.22"></p>
+<blockquote>
+<p>我们需要输入 <code>w</code> 两次来应用这个设置（这不是笔误）。</p>
+</blockquote>
+<p>你可以配合使用 <code>grep</code> 和管道符来搜索特定的进程，比如像这样：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps axww | grep &quot;Visual Studio Code&quot;</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-02-at-12.33.45.png" alt="Screen-Shot-2020-09-02-at-12.33.45"><br><code>ps</code> 返回的列表达了一些重要信息。</p>
+<p>第一个信息是 <code>PID</code>，也就是进程 ID。当你想在另一个命令中引用这个进程时，比如说要杀死它，这是关键的。</p>
+<p>然后是 <code>TT</code>，它告诉我们进程所使用的终端 ID。</p>
+<p>接下来 <code>STAT</code> 告诉我们进程的状态：</p>
+<p><code>I</code> 代表闲置的进程（睡眠时间超过约 20 秒）<br><code>R</code> 代表可运行的进程<br><code>S</code> 代表睡眠时间少于 20 秒的进程<br><code>T</code> 代表已停止的进程<br><code>U</code> 代表处于不间断等待中的进程<br><code>Z</code> 代表已死亡的进程（<em>zombie</em>，即僵尸进程）</p>
+<p>如果出现一个以上的字母，那么第二个字母代表进一步的、可能非常有技术性的信息。</p>
+<p>常见的是 <code>+</code> ，它代表相应进程在终端中处于前台。而 <code>s</code> 代表相应进程是一个 <a target="_blank" rel="noopener" href="https://unix.stackexchange.com/questions/18166/what-are-session-leaders-in-ps">会话领头进程（session leader）</a>.</p>
+<p><code>TIME</code> 则告诉我们进程已经运行了多长时间。</p>
+<h2 id="Linux-中的-top-命令"><a href="#Linux-中的-top-命令" class="headerlink" title="Linux 中的 top 命令"></a>Linux 中的 <code>top</code> 命令</h2><p><strong><code>top</code> 命令用来显示系统中正在运行的进程的动态实时信息。</strong></p>
+<p>如果要了解系统发生了什么，这条命令真的很方便。</p>
+<p>它的用法很简单。你只需要输入 <code>top</code> ，终端会完全沉浸到新的视图中：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-11.39.53.png" alt="Screen-Shot-2020-09-03-at-11.39.53"><br>这个进程是持续运行的。要退出，你可以输入字母 <code>q</code> 或按下 <code>ctrl-C</code>。</p>
+<p>它给出了很多信息：进程数量、有多少进程在运行或休眠、系统负载、CPU 使用率，还有更多信息。</p>
+<p>在下方，占用 CPU 和内存资源最多的进程列表不断刷新。</p>
+<p>默认情况下，进程按 CPU 使用率排列，正如你在高亮标记的 <code>%CPU</code> 列中看到的那样。</p>
+<p>你可以添加一个参数，要求进程列表按内存利用率排列：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top -o mem</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-kill-命令"><a href="#Linux-中的-kill-命令" class="headerlink" title="Linux 中的 kill 命令"></a>Linux 中的 <code>kill</code> 命令</h2><p>Linux 进程可以接收<strong>信号</strong>并做出反应。</p>
+<p>这是我们与运行中进程打交道的一种方式。</p>
+<p><code>kill</code> 程序可以向任一程序发送多种信号。</p>
+<p>虽然这个命令的名字暗示了它的主要功能，但它不只是用来终止程序的。</p>
+<p>它的用法是：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kill &lt;PID&gt;</span><br></pre></td></tr></table></figure>
+
+<p>默认情况下，它会向指定的进程 ID 发送 <code>TERM</code> 信号。</p>
+<p>我们可以使用参数来发送其它信号，包括以下这些：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">kill -HUP &lt;PID&gt;</span><br><span class="line">kill -INT &lt;PID&gt;</span><br><span class="line">kill -KILL &lt;PID&gt;</span><br><span class="line">kill -TERM &lt;PID&gt;</span><br><span class="line">kill -CONT &lt;PID&gt;</span><br><span class="line">kill -STOP &lt;PID&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>HUP</code> 代表 <strong>hang up（挂起）</strong>。 如果在终止进程之前，先关闭了启动它的终端窗口，这一信号将被自动发送。</p>
+<p><code>INT</code> 代表 <strong>interrupt（干扰）</strong>，这个信号和在终端中按下 <code>ctrl-C</code> 组合键的作用一样，常常用来终结进程。</p>
+<p><code>KILL</code> 信号并不直接发送给进程，而是发送到操作系统内核，内核会让指定进程立刻停止并终结。</p>
+<p><code>TERM</code> 代表 <strong>terminate（终结）</strong>。这是本命令的默认信号，进程收到它会自主终结。</p>
+<p><code>CONT</code> 代表 <strong>continue（继续）</strong>。它可以用来恢复一个被停止的进程。</p>
+<p><code>STOP</code> 信号并不直接发送给进程，而是发送到操作系统内核，内核会让指定进程立刻停止（但不终结）。</p>
+<p>有时你也会见到用数字表示状态的情况，例如 <code>kill -1 &lt;PID&gt;</code>。在这种情况下，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1` 对应 `HUP`</span><br><span class="line">`2` 对应 `INT`</span><br><span class="line">`9` 对应 `KILL`</span><br><span class="line">`15` 对应 `TERM`</span><br><span class="line">`18` 对应 `CONT`</span><br><span class="line">`15` 对应 `STOP</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-killall-命令"><a href="#Linux-中的-killall-命令" class="headerlink" title="Linux 中的 killall 命令"></a>Linux 中的 <code>killall</code> 命令</h2><p>与 <code>kill</code> 命令类似， <code>killall</code> 也向进程发送状态信号，但区别是后者可以同时向多个进程发送信号，而非前者只能向单个进程 ID 发送信号。</p>
+<p>这是它的命令语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall &lt;name&gt;</span><br></pre></td></tr></table></figure>
+
+<p><strong><code>name</code> 也就是进程的名字。例如，假设有多个 <code>top</code> 程序的实例在运行， <code>killall top</code> 命令将完全终结它们。</strong></p>
+<p>你可以指定某一个信号，就像使用 <code>kill</code> 命令那样（请向上翻阅 <code>kill</code> 命令的指南以了解更多具体可以发送的信号），例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">killall -HUP top</span><br></pre></td></tr></table></figure>
+
+<h2 id="Linux-中的-jobs-命令"><a href="#Linux-中的-jobs-命令" class="headerlink" title="Linux 中的 jobs 命令"></a>Linux 中的 <code>jobs</code> 命令</h2><p>当我们在 Linux &#x2F; macOS 中运行命令时，我们可以在末尾加入 <code>&amp;</code> 符号，使其在后台运行。</p>
+<p>例如，让 <code>top</code> 命令在后台运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top &amp;</span><br></pre></td></tr></table></figure>
+
+<p>这对于需要长时间运行的程序来说很方便。</p>
+<p>要返回切入后台的程序，可以使用 <code>fg</code> 命令。如果后台只有一个作业进程，那么直接使用就好；否则要在后面加上作业进程的号码，如： <code>fg 1</code>、<code>fg 2</code> ，以此类推。</p>
+<p>要获取作业进程号，我们可以使用 <code>jobs</code> 命令。</p>
+<p>假设我们运行了 <code>top &amp;</code>，之后再运行 <code>top -o mem &amp;</code> ，因而我们有两个 top 实例在运行。此时 <code>jobs</code> 命令会这样告诉我们：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-11.49.42.png" alt="Screen-Shot-2020-09-03-at-11.49.42"><br>现在我们可以利用 <code>fg &lt;作业号&gt;</code> 切回任意一个实例。要再次终止程序，可以按下 <code>cmd-Z</code> 。</p>
+<p>运行 <code>jobs -l</code> 也会列出每一个作业的进程 ID。</p>
+<h2 id="Linux-中的-bg-命令"><a href="#Linux-中的-bg-命令" class="headerlink" title="Linux 中的 bg 命令"></a>Linux 中的 <code>bg</code> 命令</h2><p>当命令执行时，你可以按下 <code>ctrl-Z</code> 暂停它。</p>
+<p>按下后，命令会即刻停止，并将你带回到 Shell 终端。</p>
+<p>你可以恢复命令在后台的执行，这样既可以使命令保持运行，同时又不会妨碍你在终端中做其他工作。</p>
+<p>在这一例子中，有 2 个命令停止了：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-16.06.18.png" alt="Screen-Shot-2020-09-03-at-16.06.18"><br>运行 <code>bg 1</code> 即可在后台恢复作业 #1 的执行。</p>
+<p>我也可以不带任何参数执行 <code>bg</code> 命令，它会默认选取作业列表中的 #1 项。</p>
+<h2 id="Linux-中的-fg-命令"><a href="#Linux-中的-fg-命令" class="headerlink" title="Linux 中的 fg 命令"></a>Linux 中的 <code>fg</code> 命令</h2><p><strong>当命令在后台运行时，由于此前你已经在命令末尾加上了 <code>&amp;</code> （例如 <code>top &amp;</code> ，或是使用了 <code>bg</code> 命令将命令放到后台），此时你可以用 <code>fg</code> 命令将其切换回前台。</strong></p>
+<p>执行</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fg</span><br></pre></td></tr></table></figure>
+
+<p>它将在前台恢复最后被暂停的作业。</p>
+<p>你也可以加上作业号，即可指定任一你想在前台恢复的作业，作业号可以使用 <code>jobs</code> 命令获得。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-16.12.46.png" alt="Screen-Shot-2020-09-03-at-16.12.46"></p>
+<p>执行 <code>fg 2</code> 将恢复作业 #2：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-16.12.54.png" alt="Screen-Shot-2020-09-03-at-16.12.54"></p>
+<h2 id="Linux-中的-type-命令"><a href="#Linux-中的-type-命令" class="headerlink" title="Linux 中的 type 命令"></a>Linux 中的 <code>type</code> 命令</h2><p>命令可分为以下四种类型：</p>
+<ul>
+<li>可执行程序</li>
+<li>Shell 内置程序</li>
+<li>Shell 功能</li>
+<li>命令别名</li>
+</ul>
+<p>如果你很想知道或只是很好奇，<code>type</code> 命令可以帮你分清这些。它会告诉你某一命令如何被解析。</p>
+<p>其中一个有趣的现象是：对于别名，它会告诉你某个别名将被解析到何处。例如，在 Bash 和 Zsh 中， <code>ll</code> 显示为一个别名，而在 Fish 中，由于 <code>ll</code> 是默认提供的，所以它会告诉你这是内置的 Shell 功能。</p>
+<h2 id="Linux-中的-which-命令"><a href="#Linux-中的-which-命令" class="headerlink" title="Linux 中的 which 命令"></a>Linux 中的 <code>which</code> 命令</h2><p>假定你有一个可直接执行的命令，因为它处在 Shell 路径中，但你想知道它的具体位置。</p>
+<p>你可以用 <code>which</code> 来做这件事。这个命令会返回指定命令的路径。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://www.freecodecamp.org/news/content/images/2020/10/Screen-Shot-2020-09-03-at-17.22.47.png" alt="Screen-Shot-2020-09-03-at-17.22.47"><br><code>which</code> 只对存储在磁盘上的可执行文件起作用，对别名或内置 Shell 功能无效。</p>
+<h2 id="Linux-中的-nohup-命令"><a href="#Linux-中的-nohup-命令" class="headerlink" title="Linux 中的 nohup 命令"></a>Linux 中的 <code>nohup</code> 命令</h2><p>有时你必须在远程机器上运行一个长时间活跃的进程，但之后你需要断开连接。</p>
+<p>或者，你只是想防止当本地和服务器之间有任何网络问题时，命令被停止执行。</p>
+<p>要让任一命令在登出或关闭服务器会话后继续运行，可以使用 <code>nohup</code> 命令。</p>
+<p>执行 <code>nohup &lt;命令&gt;</code> 可以让某个进程在你登出后继续工作。</p>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">Satoru</div><div class="post-copyright__author_desc">明悟之初，在为无名</div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="该文章为原创文章，注意版权协议" href="http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/">原创</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/')">Satoru's Blog</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"><div class="post-reward" onclick="anzhiyu.addRewardMask()"><div class="reward-button button--animated" title="赞赏作者"><i class="anzhiyufont anzhiyu-icon-hand-heart-fill"></i>打赏作者</div><div class="reward-main"><div class="reward-all"><span class="reward-title">感谢你赐予我前进的力量</span><ul class="reward-group"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul><a class="reward-main-btn" href="/about/#about-reward" target="_blank"><div class="reward-text">赞赏者名单</div><div class="reward-dec">因为你们的支持让我意识到写文章的价值🙏</div></a></div></div></div><div id="quit-box" onclick="anzhiyu.removeRewardMask()" style="display: none"></div></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="使用手机访问这篇文章"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/"></div><div class="reward-dec">使用手机访问这篇文章</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=Satoru's Blog&amp;url=http://example.com/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/&amp;pic=" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="复制链接" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__tag-list"></div></div></div><div class="post_share"><div class="social-share" data-image="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"/><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer="defer"></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/02/01/JS/"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/2024/02/01/MYSQL%E6%8F%90%E6%9D%83/"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info"></div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://bu.dusays.com/2023/04/27/64496e511b09c.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__description">天上天下，唯我独尊</div></div></div><div class="card-widget anzhiyu-right-widget" id="card-wechat" onclick="null"><div id="flip-wrapper"><div id="flip-content"><div class="face" style="background: url(https://bu.dusays.com/2023/01/13/63c02edf44033.png) center center / 100% no-repeat"></div><div class="back face" style="background: url(https://bu.dusays.com/2023/05/13/645fa415e8694.png) center center / 100% no-repeat"></div></div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E5%92%8C-Shell-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">Linux 和 Shell 简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Linux-%E7%9A%84-Shell%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是 Linux 的 Shell？</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-man-%E5%91%BD%E4%BB%A4%EF%BC%88man%EF%BC%81%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">Linux 中的 man 命令（man！）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-ls-%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">Linux 中的 ls 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-cd-%E5%91%BD%E4%BB%A4"><span class="toc-number">4.</span> <span class="toc-text">Linux 中的 cd 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-pwd-%E5%91%BD%E4%BB%A4"><span class="toc-number">5.</span> <span class="toc-text">Linux 中的 pwd 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-mkdir-%E5%91%BD%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">Linux 中的 mkdir 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-rmdir-%E5%91%BD%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">Linux 中的 rmdir 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-mv-%E5%91%BD%E4%BB%A4"><span class="toc-number">8.</span> <span class="toc-text">Linux 中的 mv 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-cp-%E5%91%BD%E4%BB%A4"><span class="toc-number">9.</span> <span class="toc-text">Linux 中的 cp 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-open-%E5%91%BD%E4%BB%A4"><span class="toc-number">10.</span> <span class="toc-text">Linux 中的 open 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-touch-%E5%91%BD%E4%BB%A4"><span class="toc-number">11.</span> <span class="toc-text">Linux 中的 touch 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-find-%E5%91%BD%E4%BB%A4"><span class="toc-number">12.</span> <span class="toc-text">Linux 中的 find 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-ln-%E5%91%BD%E4%BB%A4"><span class="toc-number">13.</span> <span class="toc-text">Linux 中的 ln 命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A1%AC%E9%93%BE%E6%8E%A5"><span class="toc-number">13.0.1.</span> <span class="toc-text">硬链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AF%E9%93%BE%E6%8E%A5"><span class="toc-number">13.0.2.</span> <span class="toc-text">软链接</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-gzip-%E5%91%BD%E4%BB%A4"><span class="toc-number">14.</span> <span class="toc-text">Linux 中的 gzip 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-gunzip-%E5%91%BD%E4%BB%A4"><span class="toc-number">15.</span> <span class="toc-text">Linux 中的 gunzip 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-tar-%E5%91%BD%E4%BB%A4"><span class="toc-number">16.</span> <span class="toc-text">Linux 中的 tar 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-cat-%E5%91%BD%E4%BB%A4"><span class="toc-number">17.</span> <span class="toc-text">Linux 中的 cat 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-less-%E5%91%BD%E4%BB%A4"><span class="toc-number">18.</span> <span class="toc-text">Linux 中的 less 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-tail-%E5%91%BD%E4%BB%A4"><span class="toc-number">19.</span> <span class="toc-text">Linux 中的 tail 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-wc-%E5%91%BD%E4%BB%A4"><span class="toc-number">20.</span> <span class="toc-text">Linux 中的 wc 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-grep-%E5%91%BD%E4%BB%A4"><span class="toc-number">21.</span> <span class="toc-text">Linux 中的 grep 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-sort-%E5%91%BD%E4%BB%A4"><span class="toc-number">22.</span> <span class="toc-text">Linux 中的 sort 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-diff-%E5%91%BD%E4%BB%A4"><span class="toc-number">23.</span> <span class="toc-text">Linux 中的 diff 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-echo-%E5%91%BD%E4%BB%A4"><span class="toc-number">24.</span> <span class="toc-text">Linux 中的 echo 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-chown-%E5%91%BD%E4%BB%A4"><span class="toc-number">25.</span> <span class="toc-text">Linux 中的 chown 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-chmod-%E5%91%BD%E4%BB%A4"><span class="toc-number">26.</span> <span class="toc-text">Linux 中的 chmod 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-umask-%E5%91%BD%E4%BB%A4"><span class="toc-number">27.</span> <span class="toc-text">Linux 中的 umask 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-du-%E5%91%BD%E4%BB%A4"><span class="toc-number">28.</span> <span class="toc-text">Linux 中的 du 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-df-%E5%91%BD%E4%BB%A4"><span class="toc-number">29.</span> <span class="toc-text">Linux 中的 df 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-basename-%E5%91%BD%E4%BB%A4"><span class="toc-number">30.</span> <span class="toc-text">Linux 中的 basename 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-dirname-%E5%91%BD%E4%BB%A4"><span class="toc-number">31.</span> <span class="toc-text">Linux 中的 dirname 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-ps-%E5%91%BD%E4%BB%A4"><span class="toc-number">32.</span> <span class="toc-text">Linux 中的 ps 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-top-%E5%91%BD%E4%BB%A4"><span class="toc-number">33.</span> <span class="toc-text">Linux 中的 top 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-kill-%E5%91%BD%E4%BB%A4"><span class="toc-number">34.</span> <span class="toc-text">Linux 中的 kill 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-killall-%E5%91%BD%E4%BB%A4"><span class="toc-number">35.</span> <span class="toc-text">Linux 中的 killall 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-jobs-%E5%91%BD%E4%BB%A4"><span class="toc-number">36.</span> <span class="toc-text">Linux 中的 jobs 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-bg-%E5%91%BD%E4%BB%A4"><span class="toc-number">37.</span> <span class="toc-text">Linux 中的 bg 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-fg-%E5%91%BD%E4%BB%A4"><span class="toc-number">38.</span> <span class="toc-text">Linux 中的 fg 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-type-%E5%91%BD%E4%BB%A4"><span class="toc-number">39.</span> <span class="toc-text">Linux 中的 type 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-which-%E5%91%BD%E4%BB%A4"><span class="toc-number">40.</span> <span class="toc-text">Linux 中的 which 命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux-%E4%B8%AD%E7%9A%84-nohup-%E5%91%BD%E4%BB%A4"><span class="toc-number">41.</span> <span class="toc-text">Linux 中的 nohup 命令</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/01/ROIS%20%E5%86%AC%E8%AE%AD%E9%A2%98%E8%A7%A3/" title="No title">No title</a><time datetime="2024-02-01T09:21:18.091Z" title="Created 2024-02-01 17:21:18">2024-02-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/01/MYSQL%E6%8F%90%E6%9D%83/" title="No title">No title</a><time datetime="2024-02-01T09:21:18.089Z" title="Created 2024-02-01 17:21:18">2024-02-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/01/Linux%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" title="No title">No title</a><time datetime="2024-02-01T09:21:18.088Z" title="Created 2024-02-01 17:21:18">2024-02-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/01/JS/" title="No title">No title</a><time datetime="2024-02-01T09:21:18.087Z" title="Created 2024-02-01 17:21:18">2024-02-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/01/Burpsuite%E7%9A%84%E4%BD%BF%E7%94%A8/" title="No title">No title</a><time datetime="2024-02-01T09:21:18.084Z" title="Created 2024-02-01 17:21:18">2024-02-01</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2020 - 2024 By <a class="footer-bar-link" href="/" title="Satoru" target="_blank">Satoru</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="主题">主题</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">13</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">6</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">0</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://blog.anheyu.com/" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="/img/favicon.ico" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Basic-Tool-Using/" style="font-size: 0.88rem;">Basic Tool Using<sup>1</sup></a><a href="/tags/C/" style="font-size: 0.88rem;">C<sup>1</sup></a><a href="/tags/Node/" style="font-size: 0.88rem;">Node<sup>1</sup></a><a href="/tags/Web/" style="font-size: 0.88rem;">Web<sup>1</sup></a><a href="/tags/%E7%BD%91%E5%AE%89/" style="font-size: 0.88rem;">网安<sup>2</sup></a><a href="/tags/%E8%AE%B2%E5%BA%A7learning/" style="font-size: 0.88rem;">讲座learning<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="anzhiyufont anzhiyu-icon-book-open"></i></button><button id="translateLink" type="button" title="Switch Between Traditional Chinese And Simplified Chinese">繁</button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="anzhiyufont anzhiyu-icon-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="8152976493" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://y.qq.com/n/ryqq/playlist/8802438608&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/01/2021 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2020 By 安知鱼 V1.6.12",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 Satoru 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="post"></div><script>var visitorMail = "";
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
