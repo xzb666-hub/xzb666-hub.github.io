@@ -1,3 +1,3 @@
-var posts=["2024/02/01/Burpsuite的使用/","2024/01/01/C语言/","2023/09/18/HTTP协议/","2024/02/01/MYSQL提权/","2024/02/01/ROIS 冬训题解/","2024/01/01/Node.js/","2024/02/01/JS/","2024/02/01/hello-world/","2024/02/01/Linux基本命令/","2023/09/18/鲲鹏基座-跨平台软件转移/","2023/09/18/The Missing Semester/","2023/10/28/Web/","2023/09/18/SQL/"];function toRandomPost(){
+var posts=["2024/02/01/Burpsuite的使用/","2023/09/18/HTTP协议/","2024/01/01/C语言/","2023/09/18/MYSQL提权/","2024/02/01/JS/","2024/01/01/Node.js/","2023/09/18/Linux基本命令/","2024/02/01/ROIS 冬训题解/","2023/09/18/The Missing Semester/","2023/09/18/鲲鹏基座-跨平台软件转移/","2023/10/28/Web/","2023/09/18/SQL/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
