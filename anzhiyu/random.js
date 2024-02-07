@@ -1,3 +1,3 @@
-var posts=["2024/01/01/C语言/","2023/09/18/JS/","2023/09/18/Linux基础/","2023/09/18/MYSQL提权/","2024/01/01/Node.js/","2023/09/18/ROIS 冬训题解/","2024/02/05/SQL injection/","2023/09/18/The Missing Semester/","2023/09/18/SQL/","2023/10/28/Web开发入门/","2023/09/18/鲲鹏基座-跨平台软件转移/","2023/09/18/网安基础/"];function toRandomPost(){
+var posts=["2024/01/01/Node.js/","2023/09/18/JS/","2024/01/01/C语言/","2023/09/18/ROIS 冬训题解/","2023/09/18/MYSQL提权/","2023/09/18/Linux基础/","2023/09/18/The Missing Semester/","2024/02/05/php/","2023/09/18/网安基础/","2024/02/05/SQL injection/","2023/09/18/鲲鹏基座-跨平台软件转移/","2023/10/28/Web开发入门/","2023/09/18/SQL/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
